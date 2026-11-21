@@ -37,18 +37,34 @@ Use this when the AI Sales Page Tool (https://tasteofreedom.com/the-buy-now-sale
 2. **Read in full:** `structure.md`, `voice.md`, both example pairs, `knowledge/copy-rules.md`.
 3. **Map the inputs to the 14 sections.** Write a short table: section → which input fields and brief facts feed it → what's missing. Missing proof means a placeholder or skip the section (sections 9, 10 and 13 can be skipped when there are no testimonials; say what that costs).
 4. **Write 2 versions, each with a different angle:**
-   - **Run 1, empathetic, pain-led.** "You're not the problem; the approach is." Leads with what they're stuck in.
-   - **Run 2, aspirational, outcome-led.** Leads with the result and the founder's proof.
+   - **Run 1, empathetic, pain-led.** Open on what the buyer is stuck in (their real situation from the inputs), then show the simpler path. Don't write it as "you're not X, you're Y": `voice.md` bans that reframe-contrast pattern. Put the angle into section 5's core reframe and section 8's "What if the problem isn't…?" instead.
+   - **Run 2, aspirational, outcome-led.** Lead with the result and the founder's proof.
 
-   Each version has all 14 sections (or the agreed skips), real headlines (never the section labels), and a CTA under each section. Use only facts from the brief.
-5. **Run the gate** in `voice.md`:
+   **Each version:**
+   - covers all 14 sections, with real headlines (never the section labels);
+   - follows `structure.md` for where CTAs go (section 6 has none; the rest end with one);
+   - uses the house button label on every button: `GET INSTANT ACCESS · $X →`.
+
+   **Facts:** use only facts that are in the brief. If a fact is in `tool-inputs.md` but not in the brief, either add it to the brief with its source, or drop it.
+
+   **Voice:**
+   - The page speaks as the founder, in the first person.
+   - Use Isabelle's structure and rhythm from `voice.md` (short lines, "So…" benefit lines, "+" for "and").
+   - Use the founder's own phrases and story beats from the brief.
+   - The buyer's own words go in quotes.
+
+   **Missing proof:** write `[Insert: what's needed]` as the only placeholder format. Don't decide skips here. Stage 2c asks the client whether to skip sections 9, 10 and 13.
+
+5. **Run the gate** in `voice.md`, then apply `knowledge/copy-rules.md` directly. Claude wrote this draft, so there are no client words to protect. The founder's quotes and story phrases stay word for word:
    - the never list;
    - delete reframe-contrast lines;
    - rewrite telepathy lines;
-   - compare claim by claim with the brief (no hardened hedges, no new numbers);
-   - then `knowledge/copy-rules.md`.
+   - compare claim by claim with the brief (no hardened hedges, no new numbers).
 6. **Save** them as `my-sales-page/copy-tool-output-run1.md` and `-run2.md`. Add a header line to each: **"Written by Claude (fallback: tool unavailable), not by the AI Sales Page Tool."** The client should know.
 7. **Pick one, with a one-line reason,** and continue with **Stage 2b** (rework the hero with the framework), **2c** (structure check) and **2d** (rules pass) exactly as with the tool's output.
+
+## Tested
+On Nov 20 2026 a fresh agent followed this file blind (without seeing the tool's real output) and wrote Rickey's Run 1. Result: all 14 sections specific to Rickey (his real story beats, the 1,000-follower rule, the product-check "gold mine" line, the buyers' own fears), zero rule breaks, only the 3 real offer items. The draft is in `knowledge/copy-examples/rickey-fallback-run1.md`: compare it with `examples/rickey-headstart/copy-tool-output.md`.
 
 ## Quality bar
 Put your chosen run next to `examples/rickey-headstart/copy-tool-output.md`. It should be just as specific: the buyer's real words, the founder's real story beats, the real components with what each does, and no generic lines. A paragraph that could go on any product's page is a fail: rewrite it with a fact from the brief.
