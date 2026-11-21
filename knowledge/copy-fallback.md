@@ -11,7 +11,7 @@ Use this when the AI Sales Page Tool (https://tasteofreedom.com/the-buy-now-sale
 
 ## The two example pairs (study both before writing)
 
-| Pair | Inputs (the 15 fields) | Output (what the tool wrote) |
+| Pair | Inputs (the 16 fields) | Output (what the tool wrote) |
 |---|---|---|
 | **Rickey · TikTok Shop Headstart** (a course + plan + private channel, $27) | `examples/rickey-headstart/tool-inputs.md` (with `brief.md` as the source) | `examples/rickey-headstart/copy-tool-output.md` (Run 1, the chosen one; the hero was reworked after, see 2b) |
 | **The tool's built-in sample: "The 3-Email Profit System™"** (an email system, $97) | `knowledge/copy-examples/sample-3-email-inputs.md` | `knowledge/copy-examples/sample-3-email-output.md` |

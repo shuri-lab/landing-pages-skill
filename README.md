@@ -61,7 +61,7 @@ This repo packages all of it: the process, every tool and link, every rule the f
 |---|---|
 | [`START-HERE.md`](START-HERE.md) | The instructions Claude follows |
 | [`stages/`](stages/) | One file per stage: steps, rules, done-when |
-| [`knowledge/house-style.md`](knowledge/house-style.md) | **The 27 defaults every page gets from the first build.** This is what David's feedback taught us |
+| [`knowledge/house-style.md`](knowledge/house-style.md) | **The 29 defaults every page gets from the first build.** This is what David's feedback taught us |
 | [`knowledge/copy-context.md`](knowledge/copy-context.md) · [`copy-fallback.md`](knowledge/copy-fallback.md) | What context the copy needs (with a gate) · how Claude writes the draft itself if the copy tool is down |
 | [`knowledge/copy-rules.md`](knowledge/copy-rules.md) | Copy rules (no dashes, 5th-grade clarity, one CTA label, never invent…) |
 | [`knowledge/review-checklist.md`](knowledge/review-checklist.md) | The pass/fail checklist |
@@ -79,6 +79,9 @@ Every folder has its own `README.md`.
 | [`test/`](test/) | **The replication test:** rebuild Rickey's page from the raw inputs; graded 50 automatic + 50 by TJ |
 
 ## The test (for Moses, or anyone new)
+
+**Already tried once:** on Nov 20 a fresh Claude agent with no memory of the original build took this test using only this playbook. It scored **50/50 automatic and about 96/100 overall**, with a phone screen that matches the original. See [`test/dry-run-2026-11-20/`](test/dry-run-2026-11-20/). Every problem it found in the playbook has been fixed.
+
 Read [`test/TEST.md`](test/TEST.md). Then:
 - In Claude Code, say: "Take the sales page playbook test".
 - Hand in your `my-sales-page/` folder.

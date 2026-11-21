@@ -10,7 +10,7 @@
 
 Read the whole project folder before asking anything. Convert files you can't read:
 - `.docx`: `textutil -convert txt` (macOS) or python-docx
-- PDFs: the pdf skill, or `pdftotext`
+- PDFs: `osascript -l JavaScript PLAYBOOK/tools/mac/pdf2png.js file.pdf outdir 1400` (macOS, no installs: page images + the text layer), or `pdftotext` / the pdf skill if available. **Decks saved as images have no text layer:** look at the page images and type the facts into the brief with the slide number as the source
 - Images and screenshots: look at them
 
 Then ask only for what's missing, one question at a time.
@@ -37,7 +37,7 @@ Then ask only for what's missing, one question at a time.
 
 ## 3. Write the brief
 
-Use `knowledge/templates/brief-template.md`. Every line gets a source in brackets, e.g. `[Rickey's answers.docx]`. Mark anything you inferred as `(inferred, confirm)`.
+Use `knowledge/templates/brief-template.md`. **Cross-check:** when two sources disagree (a deck vs the founder's own words in a transcript), the founder's own words win; flag it. Every line gets a source in brackets, e.g. `[Rickey's answers.docx]`. Mark anything you inferred as `(inferred, confirm)`.
 
 ## 4. Confirm before moving on
 

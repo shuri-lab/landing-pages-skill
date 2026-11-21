@@ -28,7 +28,7 @@ Open the page at phone size (Chrome DevTools → iPhone 16 Pro, or the shots in 
 | | The page body has the house-style parts: logo slider, dark/light rhythm, visuals under claims, video carousel, screenshot slider, sticky phone CTA, story with photos | 5 |
 | | Offer stack (mockup, rows with crossed values, total bar, deal box with a "You save" badge, trust row) and guarantee as its own block | 5 |
 | **Process (15)** | `brief.md` passes the copy-context gate: all 8 kinds, offer confirmed, 5+ buyer quotes, numbers labeled, every fact sourced | 3 |
-| | `tool-inputs.md`: all 15 fields filled from the brief, specific, nothing unconfirmed (compare with `examples/rickey-headstart/tool-inputs.md`) | 3 |
+| | `tool-inputs.md`: all 16 fields filled from the brief, specific, nothing unconfirmed (compare with `examples/rickey-headstart/tool-inputs.md`) | 3 |
 | | Copy stage: hero options written with a ⭐ pick; rules pass logged | 2 |
 | | `image-plan.md` + `image-prompts.md` follow the template (style brief, file names, negatives) | 3 |
 | | `review.md` + `shots/`: self-review done at phone and desktop, issues fixed | 2 |

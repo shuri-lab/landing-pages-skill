@@ -134,7 +134,7 @@ try {
     await cdp.send('Page.navigate', { url: target });
     await sleep(4500); // fonts, images, reveal animations
     // Force scroll-reveal content visible for full-page shots, then measure at the top.
-    await cdp.send('Runtime.evaluate', { expression: 'document.querySelectorAll(".r,.reveal,[data-reveal]").forEach(e=>e.classList.add("in","is-in","show","visible"));window.scrollTo(0,0)' });
+    await cdp.send('Runtime.evaluate', { expression: 'document.querySelectorAll(".r,.reveal,[data-reveal]").forEach(e=>e.classList.add("in","is-in","show","visible"));[...document.querySelectorAll("button,a,div")].filter(e=>/^\\W*(Edit layout|Save draft)$/i.test((e.textContent||"").trim())&&e.textContent.trim().length<20).forEach(e=>e.style.display="none");window.scrollTo(0,0)' });
     await sleep(600);
     const m = await cdp.send('Runtime.evaluate', { expression: measureScript, returnByValue: true });
     results[v] = m.result.value;
@@ -146,9 +146,13 @@ try {
         // Scroll through once so lazy images and videos load, then capture the whole page.
         await cdp.send('Runtime.evaluate', { expression: '(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=innerHeight*0.8){scrollTo(0,y);await new Promise(r=>setTimeout(r,250));}scrollTo(0,0);})()', awaitPromise: true });
         await sleep(1500);
-        const h = results[v].page_height;
-        const shot = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 70, captureBeyondViewport: true, clip: { x: 0, y: 0, width: vp.width, height: Math.min(h, 16000), scale: vp.mobile ? 1 : 0.6 } });
-        writeFileSync(join(outDir, `${v}-${vp.width}-full.jpg`), Buffer.from(shot.data, 'base64'));
+        // Hide fixed bars (sticky CTA) so they don't sit over the content, then capture in parts of 12,000px.
+        await cdp.send('Runtime.evaluate', { expression: '[...document.querySelectorAll("body *")].filter(e=>getComputedStyle(e).position==="fixed").forEach(e=>e.style.display="none")' });
+        const h = results[v].page_height, part = 12000;
+        for (let y = 0, n = 1; y < h; y += part, n++) {
+          const shot = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 70, captureBeyondViewport: true, clip: { x: 0, y, width: vp.width, height: Math.min(part, h - y), scale: vp.mobile ? 1 : 0.6 } });
+          writeFileSync(join(outDir, `${v}-${vp.width}-full${h > part ? '-' + n : ''}.jpg`), Buffer.from(shot.data, 'base64'));
+        }
       }
     }
   }

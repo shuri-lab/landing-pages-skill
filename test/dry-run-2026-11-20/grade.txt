@@ -1,0 +1,27 @@
+AUTO GRADE  my-sales-page/index.html
+------------------------------------------------------------------------
+PASS   10/10 Phone 393x852: first button visible without scrolling
+              button bottom 762 of 852
+PASS    5/5  Phone: headline and hero image above the fold
+              h1 bottom 280, image bottom 497
+PASS    5/5  No sideways scroll (phone, 1280, 1440)
+              extra px: {'1280': 0, 'mobile': 0, 'desktop': 0}
+PASS    5/5  Desktop 1280x800 and 1440x900: hero button on the first screen
+              in fold at: ['1280', 'desktop']
+PASS    3/3  No broken images
+              none
+PASS    5/5  One CTA label on every button
+              14 buttons, 1 label(s): ['GET INSTANT ACCESS · $27 →']
+PASS    5/5  Buttons jump to the offer stack; only one goes to checkout
+              13 jump on the page, 1 leave it (['PASTE-YOUR-CHECKOUT-LINK'])
+PASS    5/5  No em/en dashes, no banned words
+              dashes: 0, banned words found: none
+PASS    5/5  No placeholders on the page
+              none
+PASS    2/2  Images light: WebP, total under ~2 MB
+              1.23 MB over 30 images, 30 WebP
+INFO    0/0  Approved copy is on the page (copy.md lines found)
+              154 of 154 long lines found
+------------------------------------------------------------------------
+Automatic score: 50 / 50   (the other 50 points are judged: see test/rubric.md)
+HARD FAILS: none

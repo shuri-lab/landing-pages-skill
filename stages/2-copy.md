@@ -12,7 +12,7 @@
 
 The tool: **https://tasteofreedom.com/the-buy-now-sales-page-tool-page** (Isabelle's Buy-Now Sales Page). No login needed for the tool page. Answers save in that browser only. It opens with Isabelle's example product loaded: press **Clear all** first.
 
-It has 4 input steps, then Generate. Fill every field from the Project Brief. Use the client's real facts only. Where the brief has nothing, leave the field empty and tell the human; never invent.
+It has 4 input steps (16 fields: Isabelle's 15 questions plus "Numbers, facts or claims"), then Generate. Fill every field from the Project Brief. Use the client's real facts only. Where the brief has nothing, leave the field empty and tell the human; never invent.
 
 | Step | Field (exact label) | Fill it from the brief | Notes |
 |---|---|---|---|
@@ -33,7 +33,7 @@ It has 4 input steps, then Generate. Fill every field from the Project Brief. Us
 | | Testimonials | Real testimonials only | Leave EMPTY if none. The tool then uses placeholders, which you handle in 2c |
 | | Numbers, facts or claims you can use | Every verified number | Sales vs earnings must be labeled correctly (Rickey: $4M+ is sales/GMV, not earnings) |
 
-**Always write `my-sales-page/tool-inputs.md` first.** That's the text for all 15 fields, filled only from the brief (rules in `knowledge/copy-context.md`). It is the record of what the copy was built from, and it's graded in the test.
+**Always write `my-sales-page/tool-inputs.md` first.** That's the text for all 16 fields, filled only from the brief (rules in `knowledge/copy-context.md`). It is the record of what the copy was built from, and it's graded in the test.
 
 **How to run it:**
 - **Option A, Claude drives (preferred).** Open the tool in the browser pane and press Clear all. Fill each field (form inputs on the page), then go through the steps with NEXT. On step 5 press **Generate my sales page**. Then read the result with page text or the **Copy page text** button.
@@ -71,6 +71,8 @@ The tool's body copy was very solid. The hero needed real work every time, so th
 - **A traffic note.** Cold or Meta traffic gets an emotional headline. Warm or search traffic gets the direct outcome.
 - **The client's pick.** Show them and let them choose ("Use 1 + A"). The client may also hand you their own subheadline. Use it word for word.
 
+**Save** the options and the client's pick in `my-sales-page/hero-options.md`.
+
 **Then:**
 - Pre-format the subheadline highlights for the build. That means a marker on the proof phrase and bold color on the 3 value props. Don't highlight filler like "one video a day".
 - Trim the subheadline so the whole hero fits a phone screen. Rickey: we dropped "a 7-day course" from it.
@@ -101,11 +103,11 @@ Run `knowledge/copy-rules.md` over the whole copy. These came from David's feedb
 - 5th-grade clarity.
 - One number per claim.
 
-Show the list of proposed changes and get a yes before applying.
+Save the list as `my-sales-page/copy-rules-pass.md` (line → proposed change → rule). Show it and get a yes before applying.
 
 ## Done when
 
-- [ ] `tool-inputs.md` written: all 15 fields, from the brief only
+- [ ] `tool-inputs.md` written: all 16 fields, from the brief only
 - [ ] Both tool runs saved word for word, the pick explained
 - [ ] Hero: headline and subheadline chosen by the client, highlights marked
 - [ ] Every placeholder resolved or the section dropped by decision

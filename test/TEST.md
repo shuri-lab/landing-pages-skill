@@ -12,13 +12,13 @@ Build the **Offer 1 sales page for "TikTok Shop Headstart" ($27, Rickey · Game 
 
 ### Rules
 1. **Use only the inputs in `inputs.md`.**
-   - Do not open our finished page or its outputs: in `examples/rickey-headstart/`, the files `copy-final.md`, `learned-rules.md`, `brief.md`, `tool-inputs.md`, `timeline.md`, `open-items.md`, the `screenshots/` and `upsell/` folders, and `test/reference/`. Also not the `rickey-tiktokshop-project` repo's `index.html` / `offer-1-sales-page/`. The `project-files/` and `more-context/` folders are the inputs and are allowed.
-   - The playbook's `knowledge/` folder (house style, components, rules) **is** allowed, and so is `examples/rickey-headstart/body-src.html` **only as the component source** that `stages/5-build.md` points to. Copying its components is the point. Copying its copy is not: the copy must come from the tool output plus the client's answers.
+   - Do not open our finished page or its outputs: in `examples/rickey-headstart/`, the files `copy-final.md`, `learned-rules.md`, `brief.md`, `tool-inputs.md`, `timeline.md`, `open-items.md`, the `screenshots/` and `upsell/` folders. (`test/reference/` IS allowed: it's the quality bar for the first screen.) Also not the `rickey-tiktokshop-project` repo's `index.html` / `offer-1-sales-page/`. The `project-files/` and `more-context/` folders are the inputs and are allowed.
+   - The playbook's `knowledge/` folder (house style, components, rules) **is** allowed, and so is `examples/rickey-headstart/body-src.html` **only as the component source** that `stages/5-build.md` points to. Copying its components is the point. **Copying its copy text is not**: your copy must come from the tool output plus the client's answers, and TJ checks that `hero-options.md` and `copy-rules-pass.md` show the work. Where a stage file points to `examples/rickey-headstart/brief.md` or `tool-inputs.md` as the model, use the tool's sample pair in `knowledge/copy-examples/` instead.
 2. **`client-answers.md` stands in for the client.**
    - Use it whenever the playbook says to ask the client.
    - If it doesn't cover a question, make the call the playbook recommends and log it in `learned-rules.md`.
 3. **Stage 2a.**
-   - **Required:** write `tool-inputs.md` (all 15 fields, from your brief only). It's graded: it proves you gathered the right context.
+   - **Required:** write `tool-inputs.md` (all 16 fields, from your brief only). It's graded: it proves you gathered the right context.
    - **Optional:** running the tool itself (https://tasteofreedom.com/the-buy-now-sales-page-tool-page, no login).
    - **Build from:** the tool's raw output in `inputs.md`, so every test-taker starts from the same draft.
    - **Also required:** stages 2b–2d (hero rework, structure check, rules pass).

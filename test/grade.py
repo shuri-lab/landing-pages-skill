@@ -156,7 +156,7 @@ def main():
 
     # Copy coverage (optional): the kit's check_page does the full line-by-line match.
     if a.copy and os.path.exists(a.copy):
-        lines = [re.sub(r'[*_#>`]', '', l).strip() for l in open(a.copy, encoding='utf-8')]
+        lines = [re.sub(r'[*_#>`]', '', l).strip() for l in open(a.copy, encoding='utf-8') if not l.lstrip().startswith(('>', '<!--', '(', '['))]
         lines = [l for l in lines if len(l) > 25 and not l.lower().startswith(('section', '<!--', '[button'))]
         norm = lambda s: re.sub(r'[^a-z0-9$]+', ' ', s.lower()).strip()
         page_n = norm(text)

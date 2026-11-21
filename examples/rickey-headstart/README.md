@@ -5,7 +5,7 @@ The page this playbook was built from. Live: https://shuri-lab.github.io/rickey-
 | File | Stage | What it is |
 |---|---|---|
 | `brief.md` | 1 | The Project Brief, every fact sourced |
-| `tool-inputs.md` | 2a | The 15 AI Sales Page Tool fields, filled from the brief (reconstructed) |
+| `tool-inputs.md` | 2a | The 16 AI Sales Page Tool fields, filled from the brief (reconstructed) |
 | `copy-tool-output.md` | 2a/2b | The tool's raw output (Run 1, chosen) with the reworked hero options (⭐ picks) |
 | `copy-final.md` | 2d/7 | The approved copy after all feedback (kit format) |
 | `brand-kit.md` | 3 | Colors, role map, fonts |

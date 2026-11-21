@@ -12,7 +12,7 @@ All raw files are inside this playbook at `examples/rickey-headstart/project-fil
 | Offer documents (older: contents were corrected later, see client answers) | `examples/rickey-headstart/project-files/Rickey-TikTokShop-Deliverables/Game Tape - Offer Stack-v11.pdf` | 1 |
 | The product (course deck, 30-day challenge, starter list) | `examples/rickey-headstart/project-files/Rickey-TikTokShop-Deliverables/*.pdf` | 1, 4 |
 | Brand guide and logos | `examples/rickey-headstart/project-files/branding/` | 3 |
-| **The copy tool's raw output (start here for copy)** | `examples/rickey-headstart/project-files/Offer 1 - Sales Page Copy (Buy-Now tool v1).md` | 2 |
+| **The copy tool's output (start here for copy).** It is Run 1 only, and it already contains the original hero options with a ⭐ pick (2b): do your own 2b anyway; you may pick from those options | `examples/rickey-headstart/project-files/Offer 1 - Sales Page Copy (Buy-Now tool v1).md` | 2 |
 | Hero mockup (transparent) and the other offer images | `examples/rickey-headstart/project-files/offer 1 image v3 no background.png`, `examples/rickey-headstart/project-files/offer-1-image-v2.png`, `examples/rickey-headstart/project-files/offer-2-image-v2.png` | 4 |
 | AI images from the original build | `examples/rickey-headstart/project-files/offer-1-page-images/` | 4 |
 | Founder photos | `examples/rickey-headstart/project-files/rickey-photo.jpeg` (red carpet; license unconfirmed), `examples/rickey-headstart/project-files/rickey-bestbuy.jpeg` | 4 |

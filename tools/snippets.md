@@ -1,5 +1,7 @@
 # Reusable snippets (from the Rickey build)
 
+> **Current video transform:** `w_320,q_auto:eco,ac_none,du_10,f_auto` (poster `w_320,so_1,f_auto,q_auto/<id>.jpg`). Snippets below from the first rounds show the older `w_360,q_auto,ac_none,du_12`.
+
 ## Appendix: reusable snippets (from the session; the scratchpad copies are temporary)
 
 **1. Render PDF pages to PNG and dump text (macOS, no poppler).** Usage: `osascript -l JavaScript pdf2png.js "<file.pdf>" <outdir> 1400`

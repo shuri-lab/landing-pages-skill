@@ -30,10 +30,14 @@ With thin or generic inputs you get a generic page, and no amount of design fixe
 - [ ] Testimonials: real ones listed, or "none" with the chosen alternative.
 - [ ] Constraints are listed (the never list, compliance, traffic, device).
 
+In the test, `test/client-answers.md` counts as the client's confirmation.
+
+**Cross-check facts:** if the tool's output, a deck and the founder's own words disagree, the founder's own words (answers, transcripts) win. Flag the difference. Facts that exist only in images (deck slides, screenshots) are sourced as "[file, slide/page N]".
+
 If something is missing: **ask the client once, specifically** (e.g. "What are 3 things buyers say before they buy?"). If it's still missing, write the gap in the brief and tell the client what the page loses without it. Never fill a gap with invented detail.
 
 ## From brief to tool inputs (Stage 2a)
-Write `my-sales-page/tool-inputs.md`: one block per field of the AI Sales Page Tool (the 15 fields are in `stages/2-copy.md`), filled **only** from the brief.
+Write `my-sales-page/tool-inputs.md`: one block per field of the AI Sales Page Tool (the 16 fields are in `stages/2-copy.md`), filled **only** from the brief.
 - Each block is a short paragraph or 3–8 bullet lines, specific, in plain words.
 - Put the buyer's own phrases in the buyer fields and the founder's own phrases in the story field.
 - Leave out anything unconfirmed: old offer items, earnings estimates, items that show only at checkout.

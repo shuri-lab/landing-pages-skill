@@ -1,6 +1,6 @@
 # Example output: the AI Sales Page Tool's own sample ("The 3-Email Profit System™")
 
-> Generated with https://tasteofreedom.com/the-buy-now-sales-page-tool-page on Nov 20 2026 from its built-in sample inputs (`sample-3-email-inputs.md`). Text as the tool returned it ("Copy page text"). Use it to learn how the tool turns the 15 inputs into the 14 sections. Never reuse its words, numbers or claims on a client page.
+> Generated with https://tasteofreedom.com/the-buy-now-sales-page-tool-page on Nov 20 2026 from its built-in sample inputs (`sample-3-email-inputs.md`). Text as the tool returned it ("Copy page text"). Use it to learn how the tool turns the 16 inputs into the 14 sections. Never reuse its words, numbers or claims on a client page.
 >
 > Notice:
 > - the "Steal my…" subheadline (our clients ban "steal": use "Get…" or "Follow the same plan behind…")

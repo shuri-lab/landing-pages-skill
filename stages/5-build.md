@@ -29,7 +29,7 @@
    This runs expand → `build_page.py` → `check_page.py` → export. Fix everything `check_page.py` flags.
    - **What it doesn't catch:** button labels and `PASTE-YOUR-CHECKOUT-LINK` hrefs.
    - **That's why** `test/grade.py` exists. Run it too (Stage 6).
-5. **Images:** while building, use the originals. Stage 8 switches the page to WebP.
+5. **Images:** run `python3 PLAYBOOK/tools/optimize_images.py my-sales-page/images` **before the first build**: `expand_body.py` writes logos, slider and screenshots as `images/opt/<name>-<width>.webp`. Hand-written `<img>` tags can use the originals until Stage 8 switches them to WebP.
 6. Go to Stage 6. **Don't show the client before the self-review.**
 
 ## Rules that save rework (from the Rickey rounds)

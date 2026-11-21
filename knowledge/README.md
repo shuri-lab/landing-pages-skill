@@ -5,7 +5,7 @@
 | `house-style.md` | **Before every build.** The defaults every page gets from the first draft (from David's 12 feedback rounds) |
 | `copy-context.md` | **Before Stage 1.** The 8 kinds of context the copy needs, what "enough" means, and the gate before any copy work |
 | `copy-fallback.md` | The copy tool is down: Claude writes the draft itself with the tool's logic (kit questions, structure, voice) and the two example pairs |
-| `copy-examples/` | The tool's own sample: its 15 inputs and the page it wrote (second example pair, next to Rickey's) |
+| `copy-examples/` | The tool's own sample: its 16 inputs and the page it wrote (second example pair, next to Rickey's) |
 | `copy-rules.md` | **Before writing copy.** Short list + full rules with examples |
 | `design-rules.md` | Long design table with exact values (complements the house style) |
 | `review-checklist.md` | Stage 6 and the test: pass/fail list |

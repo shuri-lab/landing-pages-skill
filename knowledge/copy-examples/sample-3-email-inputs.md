@@ -1,6 +1,6 @@
 # Example inputs: the AI Sales Page Tool's own sample ("The 3-Email Profit System™")
 
-> These are the 15 inputs the tool comes pre-loaded with (Isabelle's example product), captured from https://tasteofreedom.com/the-buy-now-sales-page-tool-page on Nov 20 2026. The output they produce is `sample-3-email-output.md`. Notice how specific every field is: bullets, the buyer's own phrases, objection → answer pairs, a "biggest mistake" and a "biggest transformation" line. Aim for the same depth on a client project.
+> These are the 16 inputs the tool comes pre-loaded with (Isabelle's example product), captured from https://tasteofreedom.com/the-buy-now-sales-page-tool-page on Nov 20 2026. The output they produce is `sample-3-email-output.md`. Notice how specific every field is: bullets, the buyer's own phrases, objection → answer pairs, a "biggest mistake" and a "biggest transformation" line. Aim for the same depth on a client project.
 
 ## 1 Your Product
 
