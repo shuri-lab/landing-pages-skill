@@ -1,0 +1,128 @@
+{
+ "cta": "GET INSTANT ACCESS · $27 →",
+ "price": "$27",
+ "logos": [
+  {
+   "file": "brand-subway-360.webp",
+   "w": 800,
+   "h": 160,
+   "alt": "Subway logo"
+  },
+  {
+   "file": "brand-puma-360.webp",
+   "w": 800,
+   "h": 397,
+   "alt": "Puma logo"
+  },
+  {
+   "file": "brand-mcdonalds-360.webp",
+   "w": 410,
+   "h": 400,
+   "alt": "McDonald's logo"
+  },
+  {
+   "file": "brand-meta-360.webp",
+   "w": 800,
+   "h": 162,
+   "alt": "Meta logo"
+  },
+  {
+   "file": "brand-casio-360.webp",
+   "w": 800,
+   "h": 146,
+   "alt": "Casio logo"
+  },
+  {
+   "file": "brand-dji-360.webp",
+   "w": 690,
+   "h": 400,
+   "alt": "DJI logo"
+  }
+ ],
+ "video_base": "https://res.cloudinary.com/fje4fcoe/video/upload/",
+ "video_transform": "w_320,q_auto:eco,ac_none,du_10,f_auto",
+ "videos": [
+  {
+   "id": "v1792744659/Download",
+   "alt": "Rickey in his car showing a Batarang-style pocket knife: Bruce Wayne Has Met His Match"
+  },
+  {
+   "id": "v1792744663/Download_4",
+   "alt": "Rickey in his car with a product: These Won't Last"
+  },
+  {
+   "id": "v1792744653/Download_3",
+   "alt": "Rickey holding up a gemstone chain, answering a comment"
+  },
+  {
+   "id": "v1792744654/Download_5",
+   "alt": "Rickey showing a camera lens filter: You better have this on your camera in the sun"
+  },
+  {
+   "id": "v1792744681/Download_6",
+   "alt": "A TV and gaming setup: Raise the stakes in your Madden and fantasy football tournaments"
+  }
+ ],
+ "slider": [
+  {
+   "file": "tiktok-red-shoes-car-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: holding up red knit sneakers in his car, 84 likes"
+  },
+  {
+   "file": "tiktok-pocket-knife-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: Can Your Pocket Knife Do This, 2,647 likes"
+  },
+  {
+   "file": "tiktok-puma-bmw-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: Puma BMW Shoes, filmed in his car"
+  },
+  {
+   "file": "tiktok-red-jacket-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: a red racer bomber jacket, 1,290 likes"
+  },
+  {
+   "file": "tiktok-helmet-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: This Is Epic, a cosplay helmet, 1,700 likes"
+  },
+  {
+   "file": "tiktok-drone-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: 8K Drone, a HoverAir X1 Pro Max box"
+  },
+  {
+   "file": "tiktok-red-shoes-floor-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: red sneakers with wavy white soles, 625 likes"
+  },
+  {
+   "file": "tiktok-watch-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: a luxury watch on his wrist, 565 likes"
+  },
+  {
+   "file": "tiktok-la-hat-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: an LA snapback hat"
+  },
+  {
+   "file": "tiktok-toy-480.webp",
+   "w": 946,
+   "h": 2048,
+   "alt": "Rickey's TikTok: Adult Toy Your Kids Will Enjoy, a building-block toy blaster"
+  }
+ ]
+}

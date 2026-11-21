@@ -1,0 +1,24 @@
+# Text that belongs to the reference example (Isabelle's own page).
+# check_page.py flags any of these if they show up on a client's page.
+Buy-Now
+Isabelle
+Taste O'Freedom
+tasteofreedom
+Color Palette Generator
+37,000
+3,000+ courses
+6,000+
+$297
+GoHighLevel template
+CLAUDE skill
+Lawless Freedom
+Meg Meg
+Araeya Niaa
+Gina Karla Brittain
+Nicola Havenga
+Christina DeGiuli
+Edwina Kiernan
+Kate Hahn
+Clover Hines
+homeschool
+buy-now-sales-page-checkout

@@ -1,0 +1,54 @@
+/* Layout editor UI. Draft only: removed in the final export. Neutral tool colors on purpose (not the brand kit). */
+#ed-ui{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:99999;display:flex;flex-direction:column;align-items:center;gap:8px;font:600 14px/1.3 system-ui,-apple-system,Segoe UI,sans-serif;max-width:calc(100vw - 20px)}
+#ed-ui button{font:inherit;cursor:pointer;border:0;border-radius:10px;padding:9px 14px;background:#2a2a2a;color:#fff}
+#ed-ui button:hover{background:#444}
+#ed-ui .ed-main{background:#2563eb;box-shadow:0 6px 20px rgba(0,0,0,.28);padding:12px 20px;border-radius:999px;font-size:15px}
+#ed-ui .ed-main:hover{background:#1d4ed8}
+#ed-ui .ed-panel{background:#161616;color:#fff;border-radius:16px;padding:14px 16px;box-shadow:0 10px 34px rgba(0,0,0,.4);display:grid;gap:10px;width:min(820px,calc(100vw - 20px))}
+#ed-ui .ed-panel[hidden],#ed-ui .ed-sel[hidden],#ed-ui .ed-toast[hidden]{display:none}
+#ed-ui .ed-hint{font-weight:500;color:#cfcfcf;font-size:13px}
+#ed-ui .ed-hint b{color:#fff}
+#ed-ui .ed-sel{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #333;border-bottom:1px solid #333}
+#ed-ui .ed-size{display:flex;align-items:center;gap:10px;flex:1 1 240px}
+#ed-ui .ed-size input{flex:1;accent-color:#2563eb}
+#ed-ui .ed-size b{min-width:44px;text-align:right}
+#ed-ui .ed-grp{display:inline-flex;gap:2px}
+#ed-ui .ed-grp button:first-child{border-radius:10px 0 0 10px}
+#ed-ui .ed-grp button:last-child{border-radius:0 10px 10px 0}
+#ed-ui .ed-grp button:only-child{border-radius:10px}
+#ed-ui .ed-row{display:flex;flex-wrap:wrap;gap:8px}
+#ed-ui .ed-toast{background:#161616;color:#fff;border-radius:999px;padding:9px 16px;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+html.ed-on body{padding-bottom:330px}
+html.ed-on #page img{cursor:pointer}
+html.ed-on #page [data-ed]:hover{outline:3px dashed #2563eb;outline-offset:3px}
+html.ed-on #page a{cursor:default}
+#ed-sel{position:fixed;z-index:99998;border:3px solid #2563eb;pointer-events:none;box-shadow:0 0 0 9999px rgba(0,0,0,0)}
+#ed-sel[hidden]{display:none}
+#ed-sel .ed-handle{position:absolute;right:-10px;bottom:-10px;width:22px;height:22px;background:#2563eb;border:3px solid #fff;border-radius:6px;cursor:nwse-resize;pointer-events:auto;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+#ed-line{position:fixed;height:4px;background:#2563eb;border-radius:2px;z-index:99998;pointer-events:none}
+#ed-line[hidden]{display:none}
+@media (max-width:600px){#ed-ui .ed-panel{padding:12px}#ed-ui button{padding:9px 11px}html.ed-on body{padding-bottom:300px}}
+
+#ed-ui .ed-id{flex:1 0 100%;font-weight:500;color:#cfcfcf;font-size:13px}
+#ed-ui .ed-id b{color:#fff}
+#ed-ui .ed-step{display:inline-flex;align-items:center;gap:6px;background:#222;border-radius:10px;padding:3px 4px 3px 10px;font-size:13px;font-weight:500}
+#ed-ui .ed-step b{min-width:34px;text-align:center}
+#ed-ui .ed-step button{padding:6px 11px}
+#ed-ui .ed-send{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500}
+#ed-ui .ed-send select{font:inherit;background:#2a2a2a;color:#fff;border:0;border-radius:10px;padding:8px 10px;max-width:220px}
+#ed-tags i{position:fixed;z-index:99997;font:800 13px/1 system-ui,sans-serif;font-style:normal;background:#111;color:#fff;border:2px solid #fff;border-radius:999px;min-width:28px;height:28px;display:grid;place-items:center;padding:0 8px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+#ed-tags[hidden]{display:none}
+html.ed-on #page section[data-section]::before{content:"SECTION " attr(data-section) " · " attr(data-name);position:absolute;top:8px;left:8px;z-index:60;background:#2563eb;color:#fff;font:700 12px/1 system-ui,sans-serif;padding:7px 11px;border-radius:8px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+
+#ed-ui .ed-panel{max-height:min(62vh,540px);overflow:auto}
+#ed-ui .ed-txt{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #333;border-bottom:1px solid #333}
+#ed-ui .ed-txt[hidden]{display:none}
+#ed-ui .ed-colors{display:flex;align-items:center;gap:6px;flex:1 1 300px;font-size:13px;font-weight:500}
+#ed-ui .ed-colors>span{min-width:104px}
+#ed-ui .ed-sw{width:26px;height:26px;border-radius:50%!important;padding:0!important;border:2px solid #fff!important;box-shadow:0 0 0 1px #000}
+#ed-ui .ed-tip{flex:1 0 100%;font-size:12px;font-weight:500;color:#aaa}
+html.ed-on #page :is(h1,h2,h3,p,li,.hand,.fine,.btn,.trust,.chip,.eyebrow):hover{outline:2px dashed rgba(37,99,235,.6);outline-offset:3px}
+html.ed-on #page .ed-selected:is(h1,h2,h3,p,li,.hand,.fine,.btn,.trust,.chip,.eyebrow){outline:0}
+#ed-sel.ed-text-mode .ed-handle{display:none}
+#ed-sel.ed-text-mode{border-style:dashed}
+html.ed-on #page ::selection{background:rgba(37,99,235,.28)}

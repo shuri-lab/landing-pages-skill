@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Classic palettes</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Nunito:wght@400;600&family=Caveat&family=Raleway:wght@800&family=Inter:wght@400;600&family=Fraunces:wght@700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@page{size:Letter;margin:.45in}
+*{box-sizing:border-box}
+body{margin:0;background:#FBF6EE;color:#2A2420;font-family:'DM Mono',monospace;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet{max-width:1100px;margin:0 auto;padding:40px 28px 56px}
+h1{font-family:'Fraunces',serif;font-size:46px;line-height:1.05;margin:0 0 10px}
+.intro{font-size:13px;line-height:1.6;max-width:640px;margin:0 0 30px}
+.intro b{background:#FFE08A;padding:0 4px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 30px}
+.card{position:relative;background:#fff;border:2px solid #2A2420;padding:20px 22px 22px;box-shadow:10px 10px 0 var(--sh);break-inside:avoid;page-break-inside:avoid}
+.lab{font-size:12px;letter-spacing:.18em;font-weight:500}
+.lab span{background:#2A2420;color:#fff;padding:2px 7px;margin-right:6px;letter-spacing:.05em}
+.vibe{font-size:11px;color:#6b625a;margin:6px 0 14px}
+.prev{background:var(--bg);border:2px solid #2A2420;padding:18px 18px 14px;text-align:center;overflow:hidden}
+.ph{font-family:var(--big),serif;font-weight:var(--bw);font-size:24px;line-height:1.1;color:var(--ink)}
+.ph mark{background:linear-gradient(transparent 52%,var(--soft) 52%);color:inherit;padding:0 2px}
+.hn{font-family:var(--hand),cursive;font-size:20px;color:var(--acc);margin:6px 0 10px}
+.pb{display:inline-block;font-family:var(--std),sans-serif;font-weight:600;font-size:12px;background:var(--hi);color:var(--onhi);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:7px 16px}
+.band{margin:14px -18px -14px;background:var(--dark);color:var(--ondark);font-family:var(--std),sans-serif;font-size:11px;padding:7px}
+.aa{font-family:var(--big),serif;font-weight:var(--bw);font-size:64px;line-height:1;margin:16px 0 4px;color:#2A2420}
+.fonts{font-size:11px;line-height:1.7;color:#4a423b}
+.fonts b{display:inline-block;min-width:96px;font-weight:500;color:#8a7f74;text-transform:uppercase;letter-spacing:.08em;font-size:9.5px}
+.sws{display:flex;gap:8px;margin-top:14px;justify-content:space-between}
+.sw{flex:1;text-align:center;min-width:0}
+.sw i{display:block;width:100%;max-width:46px;aspect-ratio:1;border-radius:50%;margin:0 auto 5px;border:1.5px solid rgba(42,36,32,.35)}
+.sw b{display:block;font-size:9.5px;font-weight:500}
+.sw u{display:block;font-size:8.5px;color:#8a7f74;text-decoration:none;margin-top:1px}
+.foot{margin-top:34px;font-size:11px;line-height:1.6;max-width:640px;background:#FFF1B8;border:2px solid #2A2420;padding:14px 16px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}h1{font-size:34px}}
+@media print{.sheet{padding:0}.grid{gap:24px 22px}h1{font-size:38px}}
+</style></head><body><div class="sheet">
+<h1>Pick your look: my favorites</h1>
+<p class="intro">Two palettes from the mock offers, with a font trio each: one big bold font for headlines, one clean standard font for body text, one handwritten font for little notes. <b>Screenshot the card you like</b> and upload the screenshot to Claude when it asks for your brand. Claude reads the colors and fonts from it.</p>
+<div class="grid">
+<article class="card" style="--sh:#F2D58A;--bg:#F7F1E3;--ink:#26241F;--soft:#F2D58A;--hi:#B8482A;--onhi:#FFFFFF;--acc:#B8482A;--dark:#2F4A3A;--ondark:#F7F1E3;--big:'Fraunces';--bw:700;--std:'Nunito';--hand:'Caveat'">
+  <div class="lab"><span>41</span> FRESH SAGE & TERRACOTTA</div>
+  <div class="vibe">fresh, warm, earthy, inviting</div>
+  <div class="prev">
+    <div class="ph">Warm, fresh and <mark>ready to sell</mark></div>
+    <div class="hn">made with love</div>
+    <div class="pb">Yes, I want it</div>
+    <div class="band">Everything you need</div>
+  </div>
+  <div class="aa">Aa</div>
+  <div class="fonts"><b>Big</b> Fraunces<br><b>Standard</b> Nunito<br><b>Handwritten</b> Caveat</div>
+  <div class="sws"><div class="sw"><i style="background:#2F4A3A"></i><b>#2F4A3A</b><u>forest</u></div><div class="sw"><i style="background:#F7F1E3"></i><b>#F7F1E3</b><u>cream</u></div><div class="sw"><i style="background:#B8482A"></i><b>#B8482A</b><u>terracotta</u></div><div class="sw"><i style="background:#CFE0C6"></i><b>#CFE0C6</b><u>sage</u></div><div class="sw"><i style="background:#F2D58A"></i><b>#F2D58A</b><u>butter</u></div></div>
+</article>
+<article class="card" style="--sh:#F6D9B8;--bg:#FBF8F3;--ink:#14243B;--soft:#F6D9B8;--hi:#E07A3F;--onhi:#14243B;--acc:#2E8B57;--dark:#1F3A5F;--ondark:#FFFFFF;--big:'Raleway';--bw:800;--std:'Inter';--hand:'Caveat'">
+  <div class="lab"><span>42</span> NAVY & TERRACOTTA</div>
+  <div class="vibe">grounded, warm, professional, calm</div>
+  <div class="prev">
+    <div class="ph">Clear, calm and <mark>ready to buy</mark></div>
+    <div class="hn">steady and warm</div>
+    <div class="pb">Yes, I want it</div>
+    <div class="band">Everything you need</div>
+  </div>
+  <div class="aa">Aa</div>
+  <div class="fonts"><b>Big</b> Raleway<br><b>Standard</b> Inter<br><b>Handwritten</b> Caveat</div>
+  <div class="sws"><div class="sw"><i style="background:#1F3A5F"></i><b>#1F3A5F</b><u>navy</u></div><div class="sw"><i style="background:#E07A3F"></i><b>#E07A3F</b><u>terracotta</u></div><div class="sw"><i style="background:#F4EFE8"></i><b>#F4EFE8</b><u>cream</u></div><div class="sw"><i style="background:#2E8B57"></i><b>#2E8B57</b><u>forest</u></div><div class="sw"><i style="background:#D4A017"></i><b>#D4A017</b><u>mustard</u></div></div>
+</article></div>
+<div class="foot">Good to know: every font here is free on fonts.google.com, so nothing to install. Stick to one card so your page looks consistent. Want your own brand instead? Upload your logo or a screenshot of your brand colors.</div>
+</div></body></html>

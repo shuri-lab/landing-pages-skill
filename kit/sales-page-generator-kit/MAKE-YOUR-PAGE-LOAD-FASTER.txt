@@ -1,0 +1,46 @@
+Make my sales page load fast.
+
+Work in this same conversation, where you built my sales page. You already have the kit, my page files and my images.
+
+Goal: my page must show quickly on a phone with a slow connection. A heavy page can show a blank screen for many seconds, and visitors can leave before they see my offer.
+
+Work through the steps in order and show me a short report after each one. Never change my copy, colors, fonts, layout or the order of my sections.
+
+STEP 1 - Measure what I have now
+- List every image in my-sales-page/images: file name, file size, pixel size, where it is used and the width it is shown at on the page.
+- Tell me the current size of my-sales-page/export/paste-ready.html and the total weight of all my images.
+- Tell me the single biggest problem in one sentence.
+
+STEP 2 - Make the images light and keep them sharp
+- Keep a copy of every original in my-sales-page/images-original/. Never delete or overwrite an original.
+- Convert photos, mockups and screenshots of pages to WebP at quality 80 to 86. Keep transparent backgrounds.
+- Resize any image that is much bigger than it needs to be: at most 2 times the width it is shown at, and never enlarge an image. A big top mockup can be about 1500 px wide. Most other images need 1200 px at most.
+- Testimonial and proof screenshots: do not shrink their width and do not change what is inside them. Only convert them to WebP at high quality (about 90).
+- If an image is an animated GIF, tell me its size and suggest a lighter option. Do not remove it without asking me.
+- Read pixel sizes with what is already on my computer (for example Python's standard library). To convert to WebP you need the Pillow library for Python. Check whether it is installed. If it is not, ask me before creating a temporary virtual environment inside my-sales-page/.tools and installing Pillow there, so nothing else on my computer changes. If I say no or it does not work, tell me which images to compress myself at squoosh.app (WebP, quality 80, at the width you recommend), then continue when I have put them in my-sales-page/upload-these.
+- Update the image names inside my page files, rebuild the page and run check_page.py.
+- Show me a small table: file, size before, size after.
+
+STEP 3 - Load the right things first
+- Check the image tags in my page. The first image must have fetchpriority="high" and no loading="lazy". Every other image must have loading="lazy" and decoding="async". Every image keeps its width and height so nothing jumps. The kit's build_page.py sets this on every build, so if a tag is wrong, fix the cause and rebuild the page.
+- Load only the font weights the page really uses, and no more than 3 font families.
+- Use the kit's latest build_page.py and export_final.py. They set same-width stand-in fonts so text does not jump when my fonts load, load the font stylesheet without holding up the first paint, show the top of the page at once and, when images are hosted, preload the first image. Rebuild the page and run the export again with them.
+
+STEP 4 - Host the images on my platform
+- Ask me which platform I publish on (for example GoHighLevel, Kajabi or Systeme.io). Tell me the exact clicks to open its media library or file manager.
+- Put all the optimized images in a folder called my-sales-page/upload-these and open that folder for me.
+- Create my-sales-page/images-links.txt with one line per image, like "hero.webp = ". I will paste each link after the equals sign.
+- When I tell you the file is saved, check every link. Each one must open, be an image and have the same file size as my file. Tell me about any link that fails.
+- Write the links into my-sales-page/image-urls.json and run export_final.py with --images urls and --urls image-urls.json. Copy my-sales-page/export/paste-ready.html to my clipboard if I ask.
+- If my platform does not show hosted images, tell me. The fallback is to embed only the smallest images and keep the paste under 2.5 MB.
+
+STEP 5 - Report
+- Show before and after: the size of paste-ready.html, the total image weight and the number of images that load on the first screen.
+- Goal: the pasted code is under about 150 KB when the images are hosted.
+
+STEP 6 - Teach me to test it
+- Tell me to publish the page and hard refresh it (Cmd+Shift+R). Then open pagespeed.web.dev, paste my page link, run the Mobile test, and send you a screenshot of the scores and of the Diagnostics section.
+- Explain in plain words the numbers that matter: the Performance score (aim for 90 or more), First Contentful Paint and Largest Contentful Paint (aim for under 2.5 seconds), and Cumulative Layout Shift (aim for under 0.1). Tell me the mobile test is strict and the numbers change a little each time.
+- When I send the screenshot, tell me the next fix that would help the most.
+
+Start with step 1 now.
