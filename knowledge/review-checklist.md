@@ -62,3 +62,13 @@ Used in Stage 6 (Claude reviews its own page before anyone sees it) and by the t
 35. `check_page.py` says "OK: nothing that must be fixed".
 36. You looked at **every section** at phone and desktop size (screenshots in `my-sales-page/shots/`).
 37. Your wrap-up says which lines are your own wording ("these lines are mine, please check them").
+
+## G. Part 2 pages (checkout, bump, upsell, thank-you, emails)
+38. **[auto]** `build_funnel_pages.py` says 0 to fix; `check_funnel_pages.mjs` says all pages pass.
+39. Checkout: first field on the first phone screen; the bump box is the loudest thing in the form and starts unticked; totals change and change back.
+40. The bump is not on the sales page, not in the main email, and its file is not in the main course.
+41. Upsell: alert bar at the very top (order confirmed + access time + stay on this page), progress bar, headline on the first phone screen, stack with crossed total and savings, price the biggest thing, guarantee the client agreed covers it, YES with product and price, honest NO.
+42. Squint test on the phone screenshot: alert bar, price and YES stand out.
+43. Thank-you: first action in one tap, no paid file links, no selling, every link filled before real traffic.
+44. Every email: one product, the founder's voice, one action, a real help line.
+45. Every number, value and claim has a source or the client's yes.

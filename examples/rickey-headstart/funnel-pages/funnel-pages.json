@@ -1,0 +1,258 @@
+{
+  "_about": "Rickey's checkout, order bump, upsell, thank-you page and emails as data. Build: python3 tools/build_funnel_pages.py examples/rickey-headstart/funnel-pages/funnel-pages.json. Links are left empty here on purpose (they are account-specific).",
+  "client": "Rickey",
+  "slug": "headstart",
+  "domain": "davidhsai.com",
+  "root_prefix": "gt",
+  "assets_base": "https://shuri-lab.github.io/rickey-tiktokshop-project/images",
+  "sales_page": "../body-src.html",
+  "brand": {
+    "name": "Game Tape",
+    "accent": "#D30805",
+    "ink": "#101017",
+    "cream": "#FFF8E7",
+    "line": "#E7E3DC",
+    "heading_font": "Poppins,sans-serif",
+    "body_font": "Lato,system-ui,sans-serif",
+    "hand_font": "Caveat,cursive",
+    "fonts_url": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Lato:wght@400;700;900&family=Caveat:wght@600;700&display=swap",
+    "logo_on_light": "opt/logo-gametape-black-400.webp",
+    "logo_on_dark": "logo-gametape-stacked-white.png"
+  },
+  "legal": {
+    "privacy": "",
+    "terms": "",
+    "refund": ""
+  },
+  "links": {
+    "course": "",
+    "whatsapp": "",
+    "support": ""
+  },
+  "main": {
+    "name": "TikTok Shop Headstart",
+    "price": "$27",
+    "headline": "Get Your First TikTok Shop Sales in the Next 30 Days, <span>Starting From Zero</span>",
+    "image": {
+      "small": "opt/hero-headstart-mockup-nobg-720.webp",
+      "large": "opt/hero-headstart-mockup-nobg-1280.webp"
+    },
+    "includes_line": "7-Day Course + 30-Day Challenge + Rickey Army channel",
+    "items": [
+      {
+        "name": "The 7-Day Headstart Course",
+        "value": "$57"
+      },
+      {
+        "name": "The 30-Day First Sale Challenge",
+        "value": "$47"
+      },
+      {
+        "name": "The Rickey Army Private Channel",
+        "value": "$97"
+      }
+    ],
+    "values_approved": true,
+    "guarantee": {
+      "title": "Your Money's Protected",
+      "text": "Do the 30-day challenge, post every day, and if you haven't made a sale in 90 days, you get a full refund."
+    },
+    "guarantee_source": "copy.md, section 9 (approved, word for word)",
+    "trust": [
+      "One-time payment",
+      "Instant access",
+      "90-day refund"
+    ],
+    "email_help": "Your course login is sent here.",
+    "order_button": "GET INSTANT ACCESS →",
+    "guarantee_covers_bump": true
+  },
+  "bump": {
+    "name": "The Starter Product List",
+    "price": "$17",
+    "headline": "Yes! Add The Starter Product List",
+    "oto": "Only $17 today. One-time payment.",
+    "description": "Stop guessing what to sell. Get my list of 37 products people are buying right now, so you can pick your first product tonight.",
+    "image": "opt/starter-product-list-320.webp",
+    "delivers": "Its own one-lesson course with the PDF, granted only by the bump workflow",
+    "banner": "⚡ One-time offer · only on this page",
+    "sold_elsewhere": false
+  },
+  "upsells": [
+    {
+      "slug": "upsell",
+      "name": "My $4M TikTok Shop System",
+      "price": "$97",
+      "alert_1": "Your order is confirmed! You'll have access to TikTok Shop Headstart in the next 5 minutes.",
+      "alert_2": "Don't close this page. Take a look at this exclusive one-time opportunity first ↓",
+      "headline": "You Just Unlocked Your Headstart. Now Get Your Sales <mark>10x Faster</mark>…",
+      "image": {
+        "small": "opt/offer-2-system-720.webp",
+        "large": "opt/offer-2-system-1280.webp"
+      },
+      "image_alt": "My $4M TikTok Shop System by Rickey: the video course on a laptop, plus the Hook Bank, Format List and Product Checklist",
+      "sub": "The exact system behind my $4M TikTok Shop. <b>How I find winning products, hook people in the first 2 seconds, and film videos that sell</b>, so every video you post has a real shot at making money.",
+      "bridge_headline": "The Headstart gets you your first sale.<br><mark>This is how you keep them coming.</mark>",
+      "bullets": [
+        "Know if a product will sell <b>before</b> you film it, with the exact panel I read on every product.",
+        "Stop the scroll in the first 2 seconds with my hook stacks, so your videos get watched instead of skipped.",
+        "Film a whole week of videos in one sitting, then turn one winning product into steady income."
+      ],
+      "items": [
+        {
+          "name": "My $4M TikTok Shop System",
+          "benefit": "The full video course. My own method, shown step by step:",
+          "value": "$297",
+          "thumb": "opt/o2-course-240.webp",
+          "modules": [
+            "How to find winning products",
+            "Make videos people can't scroll past",
+            "Sell without looking like you're selling",
+            "Turn your views into sales",
+            "Film a whole week in one sitting",
+            "Turn one winner into steady income",
+            "Build multiple income streams",
+            "Protect your account"
+          ]
+        },
+        {
+          "name": "The Product Checklist",
+          "benefit": "The 6 quick checks I run before I film anything, so you only make videos for products that actually sell.",
+          "value": "$47",
+          "thumb": "opt/o2-checklist-240.webp"
+        },
+        {
+          "name": "The Hook Bank",
+          "benefit": "How I stop the scroll in the first 2 seconds, with my real hook stacks you can copy.",
+          "value": "$47",
+          "thumb": "opt/o2-hooks-240.webp"
+        },
+        {
+          "name": "The Format List",
+          "benefit": "The 6 video formats that blend into the feed and still sell, so your videos look like content, not ads.",
+          "value": "$37",
+          "thumb": "opt/o2-formats-240.webp"
+        }
+      ],
+      "values_approved": false,
+      "guarantee": {
+        "title": "Your money's protected.",
+        "text": "Do the work and still no sale? You get a full refund."
+      },
+      "guarantee_source": "Short form of the approved guarantee; client to confirm it covers the upsell",
+      "yes": "YES! Add My $4M TikTok Shop System to My Order For Only $97",
+      "no": "No thanks, I'll keep guessing which products and hooks work, and take 10x longer to get my sales.",
+      "delivers": "Its own course (lessons + 3 PDFs), granted only by the upsell workflow",
+      "pill": "⚡ Exclusive one-time offer",
+      "lead_1": "➡️ This is an exclusive one-time offer.",
+      "sold_elsewhere": false,
+      "access_confirmed": true,
+      "guarantee_covers_upsell": false
+    }
+  ],
+  "thankyou": {
+    "title": "You're in | TikTok Shop Headstart",
+    "headline": "You're in. Your <span>Headstart</span> begins now.",
+    "sub": "Everything is below and in your email. Start with Day 1 today, it takes about 15 minutes.",
+    "steps": [
+      {
+        "title": "Watch Day 1.",
+        "buttons": [
+          {
+            "label": "Open my course →",
+            "link": "course"
+          }
+        ],
+        "note": "First time? Tap \"Open my course\" in the email I just sent you. It signs you in."
+      },
+      {
+        "title": "Get your guides.",
+        "text": "Your 30-Day First Sale Challenge (PDF) is inside your course, in the first lesson, \"Start here\".",
+        "note": "Added The Starter Product List or My $4M TikTok Shop System? They're in the same place, next to your course."
+      },
+      {
+        "title": "Join the Rickey Army.",
+        "text": "My private WhatsApp channel, where I post what's working on TikTok Shop right now.",
+        "photo": "whatsapp-rickey-army-profile.jpg",
+        "photo_alt": "Rickey Army WhatsApp channel",
+        "buttons": [
+          {
+            "label": "Join the channel →",
+            "link": "whatsapp",
+            "missing": "The channel link is coming to your email.",
+            "new_tab": true
+          }
+        ],
+        "qr": "whatsapp-rickey-army-qr.png",
+        "qr_alt": "QR code to join the Rickey Army WhatsApp channel",
+        "qr_note": "On a computer? Scan this with your phone's camera to join."
+      }
+    ],
+    "quote": {
+      "text": "Most people never make a sale because they wait until they feel ready. You just stopped waiting. See you in Day 1.",
+      "by": "Rickey",
+      "photo": "rickey-bestbuy.jpg",
+      "photo_position": "50% 0",
+      "source": "Moses's thank-you copy, v1 (approved)"
+    },
+    "help": "Didn't get the email? Check spam or Promotions."
+  },
+  "emails": {
+    "main": {
+      "subject": "You're in. Here's Day 1",
+      "preview": "Your course login, your guide and the Rickey Army link.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You're in. Here's everything in one place:",
+        "1. Your course: [Open my course](login).<br>This link signs you in and works for 24 hours. The first time, you'll choose your password.<br>After that, [log in here](course) with {{contact.email}}. No password yet? Click \"Forgot password\" on that page.",
+        "2. Your 30-Day First Sale Challenge (PDF): it's inside your course, in the first lesson, \"Start here\".",
+        "3. The Rickey Army, my private WhatsApp channel: [Join the channel](whatsapp).",
+        "Do Day 1 today. It's about 15 minutes, and it's the one that gets you moving.",
+        "Rickey",
+        "P.S. Stuck on anything? Write to us at the support address on your receipt."
+      ]
+    },
+    "bump": {
+      "subject": "Your Starter Product List",
+      "preview": "Pick your first products tonight instead of guessing.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "Your Starter Product List is ready. It's in your course area, next to your Headstart course.",
+        "[Open my Product List](login). This link signs you in and works for 24 hours.<br>After that, [log in here](course) with {{contact.email}}.",
+        "Download the PDF and pick your first product tonight instead of guessing.",
+        "Rickey",
+        "P.S. Stuck on anything? Write to us at the support address on your receipt."
+      ]
+    },
+    "upsell": {
+      "subject": "Your $4M TikTok Shop System is ready",
+      "preview": "Your course, your three guides and where to start.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You added My $4M TikTok Shop System. It's in your course area now, right next to your Headstart.",
+        "[Open my System](login). This link signs you in and works for 24 hours.<br>After that, [log in here](course) with {{contact.email}}.",
+        "Your three guides (the Product Checklist, the Hook Bank and the Format List) are in the first lesson, \"Start here\". Download them first, then start with lesson 1.",
+        "Rickey",
+        "P.S. Stuck on anything? Write to us at the support address on your receipt."
+      ]
+    }
+  },
+  "sources": {
+    "numbers": {
+      "37": "counted in the Starter Product List PDF (29 + 8)",
+      "10x": "David's headline direction for the page; the client still has to confirm it",
+      "$4M": "Rickey's TikTok Shop sales (proof on the sales page)",
+      "2": "course deck: hook in the first 2 seconds",
+      "6": "counted in the Product Checklist and the Format List PDFs",
+      "15": "Moses's approved copy: Day 1 is about 15 minutes"
+    }
+  },
+  "accepted": {
+    "upsells[0].item_name": "kept from the approved live page",
+    "upsells[0].proof": "the approved live page has none yet; add one when Rickey gives it",
+    "claim:making money": "kept from the approved live page"
+  },
+  "labels": {
+    "save": "Exclusive discount · you save"
+  }
+}

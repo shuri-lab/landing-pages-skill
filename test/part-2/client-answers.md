@@ -1,0 +1,13 @@
+# Client answers (read only the answers to what you asked)
+- **Bump?** "The Fix-It Sheet sounds right. $12."
+- **How many fixes really?** "Oh. Whatever is in the file. Don't say 30 if it isn't."
+- **Upsell?** "The Bakery-Style Bread System, $87."
+- **Values for the upsell items?** "Course $197, Bake Calculator $29, Flavor Book $27. Approved."
+- **Does the guarantee cover the upsell?** "No, that one is different: '14 days. If it isn't for you, email me and I'll refund it.' Use exactly that."
+- **Is there a real deadline?** "No, not really."
+- **Is '10x better bread' something you can stand behind?** "Eh, no. Skip the number."
+- **PDF link on the thank-you page?** "If it's a bad idea, don't."
+- **Fix-It Sheet on the sales page?** "Your call."
+- **Support email?** "hello at bellandcrumb dot test"
+- **Group and course links?** "Later."
+- **Email copy, page copy approval:** "Looks good."

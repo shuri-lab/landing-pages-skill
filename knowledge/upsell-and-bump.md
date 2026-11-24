@@ -1,6 +1,6 @@
 # Upsell page, checkout column and order bump
 
-The same playbook builds the pages around the sales page. This is how we built Rickey's $97 one-click upsell page and styled the checkout's left column and order bump (Nov 20 2026). The live files: `examples/rickey-headstart/upsell/`. GoHighLevel wiring (one-click charge, products, workflows) is out of scope.
+Every design value and why, from Rickey's $97 one-click upsell page, checkout and order bump (Nov 20 to 24 2026). **You don't rebuild these by hand:** Part 2 (`stages/funnel-1-plan.md`) generates the pages from data with exactly these values (`tools/funnel_templates/`). Read this to understand a value before changing it. How to choose what to sell: `funnel-offers.md`. The source fragments: `examples/rickey-headstart/upsell/`; the same pages as data: `examples/rickey-headstart/funnel-pages/`. GoHighLevel wiring: the GHL Funnel Playbook.
 
 ## D. Upsell page (one-click upsell, $97)
 
@@ -50,12 +50,12 @@ The same playbook builds the pages around the sales page. This is how we built R
 
 ### D4. Copy patterns (reusable)
 - **Alert bar:** confirm the purchase plus an access time ("in the next 5 minutes"), then "Don't close this page" + "exclusive one-time opportunity" + ↓.
-- **Headline:** "You Just Unlocked Your [Offer 1]. Now Get Your [Result] 10x Faster…"
+- **Headline:** "You Just Unlocked Your [Offer 1]. Now [the next result they want]…" (a number such as 10x only with the client's source)
 - **Bridge:** "[Offer 1] gets you [first result]. This is how you [keep/multiply it]."
 - **Stack:** every item = name + a one-line "so you…" benefit + crossed value. Total crossed. Savings = total − price. "Today, only on this page: $X". One-click reassurance ("no need to enter your card again").
 - **Urgency without fake deadlines:** "only on this page / once you leave, it's gone" (true for a one-time offer). Never "today only" when no deadline exists (a learned rule from Offer 1).
 - **YES:** "YES! Add [Product] to My Order For Only $[price]".
-- **NO:** "No thanks, I'll [keep doing the painful thing] and take 10x longer to [get the result]."
+- **NO:** "No thanks, I'll [keep doing the painful thing] and take longer to [get the result]."
 
 ### D5. Design rules
 - Same brand tokens and fonts as the sales page (Poppins headings, Lato body).
@@ -66,12 +66,12 @@ The same playbook builds the pages around the sales page. This is how we built R
 
 ### D6. Buttons: HTML vs native, and how the native ones were styled
 - **What's native and why:** only the YES button is a native builder button, because the one-click charge on the saved card is a platform action. The NO link is plain HTML inside a custom-code element (a link to the thank-you page). Everything else is the HTML fragment.
-- **Tagging native elements:** builders rarely let you add classes, so the fragment tags elements by their text, retrying for ~9 s while the builder renders:
+- **Tagging native elements:** builders rarely let you add classes, so the fragment tags elements by their text, retrying for ~24 s while the builder renders:
   ```js
   function tag(){document.querySelectorAll('.c-button a, .c-button button').forEach(function(b){
     var t=(b.textContent||'').trim().toLowerCase();
     if(t.indexOf('yes!')===0) b.classList.add('gtu-yes'); else if(t.indexOf('no thanks')===0) b.classList.add('gtu-no');});}
-  tag(); var n=0,iv=setInterval(function(){tag();if(++n>30)clearInterval(iv);},300);
+  tag(); var n=0,iv=setInterval(function(){tag();if(++n>80)clearInterval(iv);},300);
   ```
 - **YES style:** `display:block; width:100%; max-width:720px; background:#D30805; color:#fff; border:2px solid #101017; border-radius:14px; padding:20px 18px (24/22 desktop); Poppins 900 21px (25px desktop) line-height 1.25; text-transform:none; box-shadow:5px 5px 0 #101017; white-space:normal;` with a pulse `scale(1)→scale(1.025)` over 1.8 s, and `filter:brightness(1.06)` on hover. All declarations need `!important` to beat builder styles.
 - **NO style:** centered, max-width 620, no background/border/shadow, `color:#6b6b75`, Lato 700 15px (16px desktop), underlined with a 3px offset, `margin-top:18px`.

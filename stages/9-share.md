@@ -2,7 +2,7 @@
 
 **Goal:** the team and the client can see the page on a real link, and everything needed to keep working on it is in one repo.
 
-**Out of scope here:** wiring checkout, order bump, upsell and course delivery in GoHighLevel (a separate skill). The **loader** below is how we put our HTML into GHL (or any builder that accepts custom code) without pasting 100 KB into its editor.
+**Out of scope here:** wiring checkout, order bump, upsell and course delivery in GoHighLevel (the GHL Funnel Playbook). The **loader** below is how we put our HTML into GHL (or any builder that accepts custom code) without pasting 100 KB into its editor.
 
 ## The steps (any project)
 1. **Export:** `tools/rebuild.sh <WORK> "<title>"` writes `export/index-final.html` (no editor) and `export/paste-ready.html`.
@@ -32,7 +32,7 @@
 3. `cp export/index-final.html <repo>/index.html`.
 4. **Copy only the images the page uses:** regex `images/([A-Za-z0-9_.-]+\.(?:png|jpe?g|webp|gif))` over `index.html` and `body-src.html`, then copy each match (29 images here).
 5. **Sources** into `offer-1-sales-page/`: `body-src.html copy.md copy-original.md brand-kit.md learned-rules.md image-prompts.md` plus `export/paste-ready.html`.
-6. **Client project files:** `rsync -a --exclude '.DS_Store' <client-folder>/ <repo>/project-files/` (99 MB here).
+6. **Nothing the client sells, and no private material.** Never copy deliverables, paid PDFs, course decks, transcripts or the whole client folder into a public repo. Copy a file into `project-files/` only if the person approved that exact file. A file that was public once can still be found after it's removed.
 7. **Size check:** `du -sh <repo>` (115 MB) and `find <repo> -type f -size +50M` (none). GitHub warns above 50 MB per file and rejects files above 100 MB.
 8. **Secret scan before anything goes public:**
    - `grep -rIl -E 'sk_(live|test)_[A-Za-z0-9]{8,}|pk_(live|test)_[A-Za-z0-9]{8,}|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,}|xox[bp]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY|(api[_-]?key|secret|password|passwd)\s*[:=]\s*["'"'"']?[A-Za-z0-9/+_-]{12,}' .`
@@ -42,7 +42,7 @@
 10. **Commit identity:** never the user's personal email in a public repo. Use the GitHub noreply form: `git config user.name "<owner>"`, `git config user.email "<owner>@users.noreply.github.com"`. `git init -q -b main`, commit with the attribution trailer, push.
 11. **Verify:** `git ls-remote` matches `git rev-parse HEAD`. `curl -s https://api.github.com/repos/<owner>/<repo>` → `private`, `has_pages`. `curl -o /dev/null -w '%{http_code}'` on the Pages URL.
 
-Later additions in the same repo: `downloads/` (deliverable PDFs with clean, URL-safe names), `images/opt/` (WebP variants), `offer-2-upsell/`, and the builder fragments `ghl-*.html`.
+Later additions in the same repo: `downloads/` (**free** files only; paid files live in the course, behind the login), `images/opt/` (WebP variants), `offer-2-upsell/`, and the builder fragments `ghl-*.html`.
 
 ### B3. Final folder layout (template for any project)
 ```
@@ -52,16 +52,16 @@ Later additions in the same repo: `downloads/` (deliverable PDFs with clean, URL
   index.html                # final exported sales page (Pages root = shareable preview)
   images/                   # originals actually used by the page
   images/opt/               # <name>-<width>.webp variants (C)
-  downloads/                # deliverable PDFs, clean names
+  downloads/                # FREE files only, never paid deliverables
   offer-1-sales-page/
     body-src.html  copy.md  copy-original.md  brand-kit.md  learned-rules.md  image-prompts.md
     paste-ready.html        # kit export for a builder HTML block (relative paths)
     ghl-sales-page.html     # builder version: absolute URLs + checkout link + wrapper fix + title
-    ghl-checkout-left.html  # checkout left column + order form/bump styling
-    ghl-thank-you.html      # thank-you fragment (links in one config object)
+    ghl-checkout-left.html  # Part 2: dist/checkout-left.html
+    ghl-thank-you.html      # Part 2: dist/thank-you.html
   offer-2-upsell/
-    ghl-upsell.html         # upsell fragment + styles for native YES/NO
-  project-files/            # client's raw folder (branding, deliverables, research, videos)
+    ghl-upsell.html         # Part 2: dist/<upsell slug>.html
+  project-files/            # only files the person approved one by one; never deliverables
 ```
 Local working layout during the session: `sales-page/kit/` (the kit: `1-copy 2-brand 3-images 4-build 5-publish`), `sales-page/my-sales-page/` (working copy: `body-src.html` + `body-src-vN.html` backups, `copy.md` + `copy-vN.md`, `brand-kit.md`, `learned-rules.md`, `images/`, `images/opt/`, `export/`), the repo folder next to it, and `tools/` (scripts).
 

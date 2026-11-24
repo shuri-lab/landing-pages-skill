@@ -100,3 +100,11 @@ Things that went wrong while building the Rickey page, and the fix. Read before 
 
 ---
 
+## Part 2 pages (checkout, upsell, thank-you)
+- **Elements outside our scoped block don't inherit `box-sizing`.** The NO link was 2 px too wide on a phone in a plain page. Both GHL-native elements now set it themselves.
+- **The one-click YES button appears late.** GHL shows a spinner for about 7 to 10 s, so tagging and checking must wait. The page keeps looking for 24 s.
+- **GHL forces 16px on the YES text.** The template overrides `.main-heading-button`; check the real size on the live page (21px phone, 25px desktop).
+- **A light brand color (yellow, lime) makes white text unreadable.** The generator switches to dark text on it and darkens it where it is used as text. Look at the preview.
+- **The checks read words, not truth.** A number with a made-up source passes. So does weak copy.
+- **A swapped logo** (white on white) is easy to miss: the dark logo goes on light pages.
+- **Editing `dist/` by hand is lost** at the next build. Change the JSON or the template CSS.

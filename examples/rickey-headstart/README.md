@@ -19,6 +19,7 @@ The page this playbook was built from. Live: https://shuri-lab.github.io/rickey-
 | `links.md` | all | Every link for this project |
 | `project-files/` | inputs | **The complete "Rickey-TikTokShop-Project-Files" folder**: research, founder answers and voice, deliverables, branding, logos, videos, screenshots, offer images, ChatGPT images, the copy tool's output |
 | `more-context/` | inputs | Meeting transcripts, the whole plan, the knowledge base, offer stack and critique PDFs, the earlier Game Tape page |
-| `upsell/` | (extra) | The $97 upsell page and the checkout's left column (HTML loaded into GoHighLevel) |
+| `upsell/` | (extra) | The $97 upsell page and the checkout's left column as first hand-built (HTML loaded into GoHighLevel) |
+| `funnel-pages/` | F1 to F5 | **The same pages as data** (`funnel-pages.json`), what it builds (`dist/`), the local previews and their screenshots (`shots/`). Links are empty on purpose |
 
 To rebuild it yourself from these files: copy the `sales-page/my-sales-page` layout (body-src, page-config, brand-kit, copy, images) and run `tools/rebuild.sh`. It reproduces the live page byte for byte.

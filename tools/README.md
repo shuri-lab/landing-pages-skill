@@ -9,6 +9,9 @@
 | `mac/pdf2png.js`, `mac/pdf2png-n.js` | PDF pages to PNG + the text layer (macOS, no installs) | `osascript -l JavaScript tools/mac/pdf2png.js file.pdf outdir 1400` |
 | `mac/sheet.js` | Contact sheet of many images (to pick visually) | `osascript -l JavaScript tools/mac/sheet.js <dir> <out.png> <n>` |
 | `mac/bbox.py` | Find the empty margin around a logo PNG (for trimming) | `python3 tools/mac/bbox.py logo.png` |
+| `build_funnel_pages.py` | Part 2: checkout column, upsell(s), thank-you page, emails, GHL texts and local previews from one JSON file. Computes totals; refuses rule-breaking copy (52 bad inputs in `test/part-2/probes.py`) | `python3 tools/build_funnel_pages.py my-funnel-pages/funnel-pages.json` (`--check`, `--final`) |
+| `funnel_templates/` | The approved CSS behind those pages, with brand tokens (`%%ACCENT%%` …) | used by the line above |
+| `check_funnel_pages.mjs` | Opens the Part 2 previews in Chrome at phone and desktop size, checks them, saves screenshots | `node tools/check_funnel_pages.mjs my-funnel-pages` |
 | `snippets.md` | Reusable code from the Rickey build: QA helpers, lazy video, sliders, contrast function… | Copy what you need |
 
 Tested on Nov 20 2026: `rebuild.sh` on Rickey's sources reproduces the live page byte for byte; `test/grade.py` (which uses `shoot.mjs`) scores it 50/50.

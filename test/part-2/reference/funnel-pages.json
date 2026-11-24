@@ -1,0 +1,259 @@
+{
+  "_about": "Nora Bell / Bell & Crumb: checkout, bump, upsell, thank-you and emails as data. assets_base is the local images folder for review; swap it for the public image URL before publishing.",
+  "client": "Nora Bell",
+  "slug": "firstloaf",
+  "domain": "bellandcrumb.test",
+  "root_prefix": "gt",
+  "assets_base": "",
+  "brand": {
+    "name": "Bell & Crumb",
+    "accent": "#E0A526",
+    "ink": "#2B1D14",
+    "cream": "#FFF6E3",
+    "line": "#EADFCB",
+    "heading_font": "Fraunces,Georgia,serif",
+    "body_font": "'Nunito Sans',system-ui,sans-serif",
+    "hand_font": "",
+    "fonts_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800;900&family=Nunito+Sans:wght@400;700;900&display=swap",
+    "logo_on_light": "logo-dark-trim.svg",
+    "logo_on_dark": "logo-light-trim.svg"
+  },
+  "legal": {
+    "privacy": "",
+    "terms": "",
+    "refund": ""
+  },
+  "links": {
+    "course": "",
+    "community": "",
+    "support": "hello@bellandcrumb.test"
+  },
+  "main": {
+    "name": "The First Loaf Course",
+    "price": "$29",
+    "headline": "Bake Your First Real Sourdough Loaf This Weekend, <span>Even If Your Starter Keeps Dying</span>",
+    "image": "main.svg",
+    "includes_line": "5 short video lessons + Feeding Schedule + The Crumb Room",
+    "items": [
+      {
+        "name": "The First Loaf Course, 5 short video lessons",
+        "value": "$59"
+      },
+      {
+        "name": "The printable Feeding Schedule",
+        "value": "$19"
+      },
+      {
+        "name": "The Crumb Room, my private Facebook group",
+        "value": "$49"
+      }
+    ],
+    "values_approved": true,
+    "guarantee": {
+      "title": "Bake along for 30 days.",
+      "text": "If you don't have a loaf you're proud of, email me and I'll refund every cent."
+    },
+    "guarantee_source": "brief.md, 'Guarantee on the main offer (approved, word for word)'. Title + text together are the exact sentence pair.",
+    "trust": [
+      "One-time payment",
+      "Instant access",
+      "30-day refund"
+    ],
+    "email_help": "Your course login is sent here.",
+    "order_button": "GET INSTANT ACCESS →",
+    "guarantee_covers_bump": false
+  },
+  "bump": {
+    "name": "The Sourdough Fix-It Sheet",
+    "price": "$12",
+    "banner": "One-time offer · only on this page",
+    "headline": "Yes! Add The Sourdough Fix-It Sheet",
+    "oto": "Only $12 today. One-time payment.",
+    "description": "Stop guessing why your starter won't double or your loaf is flat. Find it on my sheet of 22 fixes, so you know what to do tonight.",
+    "image": "bump.svg",
+    "delivers": "Its own one-lesson course with the Fix-It Sheet (3 pages), granted only by the bump workflow. Never inside The First Loaf Course.",
+    "sold_elsewhere": false
+  },
+  "upsells": [
+    {
+      "slug": "upsell",
+      "name": "The Bakery-Style Bread System",
+      "price": "$87",
+      "alert_1": "Your order is confirmed! You'll have access to The First Loaf Course in the next 5 minutes.",
+      "alert_2": "Don't close this page. Take a look at this exclusive one‑time opportunity first ↓",
+      "pill": "Exclusive one-time offer",
+      "lead_1": "This is an exclusive one-time offer.",
+      "headline": "You Just Unlocked Your First Loaf. Now Make the Next One Look Like It Came <mark>From a Bakery</mark>…",
+      "image": "system.svg",
+      "image_alt": "The Bakery-Style Bread System by Nora Bell",
+      "sub": "The step-by-step system for every loaf after your first. <b>Plan the bake around work, shape it so it holds, and score it so it opens</b>, so you can put it on the table and let people think you bought it.",
+      "bridge_headline": "The First Loaf Course gets you your first real loaf.<br><mark>This is how you get bakery‑style bread every week.</mark>",
+      "bullets": [
+        "Have fresh bread <b>in a normal work week</b>, with a 3-day bake plan that fits around your job.",
+        "Get that bakery look <b>without a fancy oven</b>, with shaping that holds, scoring that opens, and my way of making steam.",
+        "Make <b>baguettes, focaccia and sandwich loaves</b> from one dough, then bake for gifts, or even a stall."
+      ],
+      "items": [
+        {
+          "name": "The Full Video Course",
+          "benefit": "The full course, ready when your first loaf is out of the oven, so you know exactly what to do next:",
+          "value": "$197",
+          "thumb": "system.svg",
+          "modules": [
+            "The 3-day bake plan that fits around work",
+            "Shaping that holds",
+            "Scoring patterns that open",
+            "Steam without a fancy oven",
+            "Baguettes, focaccia and sandwich loaves from one dough",
+            "Baking for other people (gifts, stalls)"
+          ]
+        },
+        {
+          "name": "The Bake Calculator",
+          "benefit": "My spreadsheet, so you never do bread math in your head with floury hands.",
+          "value": "$29",
+          "thumb": "calc.svg"
+        },
+        {
+          "name": "The Flavor Book",
+          "benefit": "18 add-in recipes, so you don't end up baking the same plain loaf every week.",
+          "value": "$27",
+          "thumb": "flavor.svg"
+        }
+      ],
+      "values_approved": true,
+      "guarantee": {
+        "title": "14 days.",
+        "text": "If it isn't for you, email me and I'll refund it."
+      },
+      "guarantee_source": "Nora's answer: the 30-day guarantee does NOT cover the upsell; 'Use exactly that.' Title + text together are her exact words.",
+      "yes": "YES! Add The Bakery-Style Bread System to My Order For Only $87",
+      "no": "No thanks, I'll keep working out shaping, scoring and steam on my own, and take longer to get bakery-style bread.",
+      "delivers": "Its own course (6 modules + The Bake Calculator spreadsheet + The Flavor Book PDF), granted only by the upsell workflow",
+      "sold_elsewhere": false,
+      "jump_button": "Show me everything I get ↓",
+      "faq": [
+        {
+          "q": "I haven't baked yet. Is this too early?",
+          "a": "No. Bake your first loaf with the course you just got. This is ready when you are."
+        }
+      ],
+      "access_confirmed": true,
+      "proof_headline": "From a Baker Like You",
+      "proof": [
+        {
+          "text": "I finally got a loaf I could cut without it collapsing.",
+          "by": "Dana P.",
+          "source": "Nora's inbox, permission given (test)"
+        }
+      ],
+      "founder_note": {
+        "text": "I baked flat bread for a year before I figured this out. I wrote it all down so you don't have to.",
+        "by": "Nora",
+        "photo": "nora.svg",
+        "source": "Nora's words (test)"
+      }
+    }
+  ],
+  "thankyou": {
+    "title": "You're in | The First Loaf Course",
+    "headline": "You're in. Your <span>first loaf</span> begins now.",
+    "sub": "Everything is below and in your email. Open lesson 1 today, so you can bake this weekend.",
+    "steps": [
+      {
+        "title": "Watch lesson 1.",
+        "buttons": [
+          {
+            "label": "Open my course →",
+            "link": "course"
+          }
+        ],
+        "note": "First time? Tap \"Open my course\" in the email I just sent you. It signs you in."
+      },
+      {
+        "title": "Print your Feeding Schedule.",
+        "text": "It's inside your course. Stick it on the fridge, right next to the starter you're going to keep alive this time.",
+        "note": "Added The Sourdough Fix-It Sheet or The Bakery-Style Bread System? They're in the same place, next to your course."
+      },
+      {
+        "title": "Come say hi in The Crumb Room.",
+        "text": "It's my private Facebook group for people baking along with the course. Flat loaves welcome.",
+        "buttons": [
+          {
+            "label": "Join The Crumb Room →",
+            "link": "community",
+            "missing": "The group link is coming to your email.",
+            "new_tab": true
+          }
+        ]
+      }
+    ],
+    "quote": {
+      "text": "If your first one comes out a bit wonky, it's still bread, and it still makes great toast. See you in lesson 1.",
+      "by": "Nora",
+      "photo": "nora.svg",
+      "photo_position": "50% 0",
+      "source": "test only"
+    },
+    "help": "Didn't get the email? Check spam or Promotions."
+  },
+  "emails": {
+    "main": {
+      "subject": "You're in. Here's lesson 1",
+      "preview": "Your course login, your Feeding Schedule and The Crumb Room.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You're in. Here's everything in one place:",
+        "1. Your course: [Open my course](login).<br>This link signs you in and works for 24 hours. The first time, you'll choose your password.<br>After that, [log in here](course) with {{contact.email}}. No password yet? Click \"Forgot password\" on that page.",
+        "2. Your printable Feeding Schedule: it's inside your course. Print it and stick it on the fridge.",
+        "3. The Crumb Room, my private Facebook group: [Join The Crumb Room](community).",
+        "Do one thing today: watch lesson 1. The lessons are short, and you've got bread to bake this weekend.",
+        "Nora",
+        "P.S. Starter acting up? Stuck on anything? Email me at hello@bellandcrumb.test."
+      ]
+    },
+    "bump": {
+      "subject": "Your Sourdough Fix-It Sheet is ready",
+      "preview": "22 things that go wrong, with the fix next to each one.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "Your Sourdough Fix-It Sheet is ready. It's in your course area, next to The First Loaf Course.",
+        "[Open my Fix-It Sheet](login). This link signs you in and works for 24 hours.<br>After that, [log in here](course) with {{contact.email}}.",
+        "Do one thing today: print the 3 pages and tape them inside a kitchen cupboard. When something goes wrong, find it on the sheet and do the fix next to it.",
+        "Nora",
+        "P.S. Stuck on anything? Email me at hello@bellandcrumb.test."
+      ]
+    },
+    "upsell": {
+      "subject": "Your Bakery-Style Bread System is ready",
+      "preview": "Your course, The Bake Calculator, The Flavor Book and where to start.",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You added The Bakery-Style Bread System. It's in your course area now, right next to The First Loaf Course.",
+        "[Open my System](login). This link signs you in and works for 24 hours.<br>After that, [log in here](course) with {{contact.email}}.",
+        "The Bake Calculator and The Flavor Book are in there too.",
+        "Bake your first loaf this weekend with The First Loaf Course. Then open Module 1, the 3-day bake plan that fits around work, for the next one.",
+        "Nora",
+        "P.S. Stuck on anything? Email me at hello@bellandcrumb.test."
+      ]
+    }
+  },
+  "sources": {
+    "bump_number": "22: counted line by line in client/fix-it-sheet.txt (22 lines starting with '- '). Nora: 'Whatever is in the file. Don't say 30 if it isn't.'",
+    "main_prices_values": "brief.md: $29; $59, $19, $49 (approved). Total $127 computed.",
+    "main_promise": "brief.md, approved word for word",
+    "main_contents": "brief.md: 5 short video lessons, printable Feeding Schedule, private Facebook group The Crumb Room",
+    "upsell_price_values": "brief.md $87; Nora's answer: Course $197, Bake Calculator $29, Flavor Book $27. Approved. Total $253, savings $166 computed.",
+    "upsell_modules": "system-outline.txt, titles word for word (6 modules)",
+    "flavor_book_number": "18 add-in recipes: system-outline.txt",
+    "bake_calculator": "system-outline.txt says only 'spreadsheet'. 'Bread math' is Claude's reading of the name: Nora to confirm what it does.",
+    "fix_it_pages": "3 pages: fix-it-sheet.txt",
+    "access_time": "'in the next 5 minutes' is the playbook's standard line, not confirmed by Nora: time a test purchase before go-live",
+    "one_time_offer": "'only on this page' / 'it's gone': true only if the System isn't sold elsewhere at this price. Nora to confirm.",
+    "numbers": {
+      "22": "counted in fix-it-sheet.txt",
+      "3": "system-outline.txt module 1",
+      "18": "system-outline.txt"
+    }
+  }
+}

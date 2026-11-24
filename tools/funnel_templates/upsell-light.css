@@ -1,0 +1,5 @@
+/* added automatically when the accent is light (yellow, lime, peach): dark text on an accent highlighter instead of muddy colored text */
+#gtu h1 mark,#gtu .now b{color:var(--ink);background:linear-gradient(180deg,transparent 56%,%%ACCENT%% 56% 92%,transparent 92%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .1em}
+#gtu .now b{display:table;margin:8px auto 0;padding:0 .16em}
+#gtu .item .val s,#gtu .total s{text-decoration-color:%%ACCENT_TEXT%%;text-decoration-thickness:1.5px}
+#gtu .guar{background:var(--cream);border:2px dashed var(--red)}

@@ -55,6 +55,20 @@ This repo packages all of it: the process, every tool and link, every rule the f
 | 8 | Speed | WebP at display size, light video loops: about 15 MB → 1.2 MB | none |
 | 9 | Share | GitHub repo + Pages link, README, paste-ready file for any builder | Create the repo |
 
+## Part 2: the rest of the funnel's pages (F1 to F5)
+
+| # | Stage | What happens | Hands-on for you |
+|---|---|---|---|
+| F1 | Plan | Claude reads the deliverables, helps choose the bump and the upsell, writes all the copy in one file | Approve offers, prices, values, copy |
+| F2 | Checkout + order bump | Two-column checkout, form on the first phone screen, a bump that stands out | none |
+| F3 | Upsell | Alert bar, progress bar, "You just unlocked…" headline, bridge, offer stack, guarantee, YES / NO | none |
+| F4 | Thank-you + emails | Thank-you page and one email per product, so nobody gets what they didn't buy | Approve emails |
+| F5 | Review + hand-off | Automatic and visual checks, your feedback, the list of texts for GoHighLevel | Your feedback |
+
+You can start at F1 directly: "Build me an upsell page for [offer]".
+
+**Tried twice** by fresh agents for a made-up client (their own scores: 79 and 77 of 100; see [`test/part-2/`](test/part-2/)); what they found was fixed. Not yet used for a real new client, and there is no traffic data.
+
 ## What's inside
 
 | Folder | What |
@@ -70,7 +84,8 @@ This repo packages all of it: the process, every tool and link, every rule the f
 | [`knowledge/frameworks/`](knowledge/frameworks/) | Landing-pages framework v2, Hormozi VSL framework, ThrillX prompts, and how we use them |
 | [`knowledge/tools-and-links.md`](knowledge/tools-and-links.md) | Every tool and link |
 | [`knowledge/references.md`](knowledge/references.md) | JJ pages and repos and other references, and what we took from each |
-| [`knowledge/upsell-and-bump.md`](knowledge/upsell-and-bump.md) | The upsell page, checkout column and order bump |
+| [`knowledge/funnel-offers.md`](knowledge/funnel-offers.md) | How to choose the bump and the upsell, what each page must do, who gets what |
+| [`knowledge/upsell-and-bump.md`](knowledge/upsell-and-bump.md) | Every design value of the upsell page, checkout column and order bump |
 | [`kit/`](kit/) | **The complete "Sales Page Generator - for clients" folder** (Isabelle's kit, the build engine), unchanged, including the original zips and the 42 brand palettes |
 | [`tools/`](tools/) | `rebuild.sh`, `expand_body.py`, `optimize_images.py`, `shoot.mjs` (phone/desktop screenshots + fold measurements), Mac helpers |
 | [`examples/rickey-headstart/`](examples/rickey-headstart/) | The full worked example: brief, tool inputs and output, final copy, brand kit, page source, learned rules, image prompts, screenshots, the day's timeline. Plus **the complete "Rickey-TikTokShop-Project-Files" folder** (`project-files/`) and extra context (`more-context/`: meeting transcripts, the plan, the knowledge base) |
@@ -87,5 +102,5 @@ Read [`test/TEST.md`](test/TEST.md). Then:
 - Hand in your `my-sales-page/` folder.
 - TJ grades it with [`test/rubric.md`](test/rubric.md) and [`test/tj-review-sheet.md`](test/tj-review-sheet.md). **Pass: 85/100 and no hard fail.**
 
-## Out of scope
-GoHighLevel setup (checkout, order bump, one-click upsell, course delivery) will be a separate skill. Notes for it: [`knowledge/ghl-notes-for-later.md`](knowledge/ghl-notes-for-later.md).
+## What comes after
+Putting the pages live in GoHighLevel (products, order form, one-click charge, course, delivery, testing) is the **GHL Funnel Playbook**: https://github.com/shuri-lab/GHL-connection-skill.

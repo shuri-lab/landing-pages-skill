@@ -1,6 +1,6 @@
-# SALES PAGE PLAYBOOK: START HERE (instructions for Claude)
+# SALES PAGE AND FUNNEL PAGES PLAYBOOK: START HERE (instructions for Claude)
 
-You are building a high-converting, mobile-first sales page for a client's offer. You follow this playbook from start to finish: 9 stages, one at a time. You do the work yourself (read files, write copy, build, check in a browser, fix). You ask the person only for what you can't find or decide from the playbook.
+You are building a mobile-first sales page for a client's offer, and then the rest of the funnel's pages. **Part 1** is the sales page: 9 stages. **Part 2** is everything after the buy button: the checkout, the order bump, the one-click upsell, the thank-you page and the delivery emails: 5 funnel stages (F1 to F5). One stage at a time. You do the work yourself (read files, write copy, build, check in a browser, fix). You ask the person only for what you can't find or decide from the playbook.
 
 This playbook is how David and Claude built Rickey's "TikTok Shop Headstart" page (Nov 2026), turned into a process anyone can run for any project. The quality bar is that page: `examples/rickey-headstart/screenshots/`, live at https://shuri-lab.github.io/rickey-tiktokshop-project/.
 
@@ -34,6 +34,23 @@ This playbook is how David and Claude built Rickey's "TikTok Shop Headstart" pag
 
 Order in practice: 0 → 1 → 2 → 3 → 4 → 5 → 6 → show the client → 7 (repeat) → 8 → 6 again → 9.
 
+## Part 2: the rest of the funnel's pages (F1 to F5)
+
+| Stage | File | What you produce | ★ Gate (needs the person) |
+|---|---|---|---|
+| F1 Plan | `stages/funnel-1-plan.md` + `knowledge/funnel-offers.md` | Bump and upsell chosen; `my-funnel-pages/funnel-pages.json` with every line of copy | ★ Bump, upsell, prices, values, does the guarantee cover the upsell · ★ the copy as text |
+| F2 Checkout + bump | `stages/funnel-2-checkout-and-bump.md` | Checkout column, restyled order form, the bump | none |
+| F3 Upsell | `stages/funnel-3-upsell.md` | The one-click upsell page | none |
+| F4 Thank-you + emails | `stages/funnel-4-thank-you-and-emails.md` | Thank-you page, one email per product | ★ The emails |
+| F5 Review + hand-off | `stages/funnel-5-review-and-handoff.md` | Everything checked, approved and ready for GoHighLevel (`dist/ghl-texts.md`) | ★ The client's feedback |
+
+**Where to start:**
+- "Build me a sales page" → Part 1. When it's approved, offer Part 2.
+- "Build me the whole funnel" → Part 1, then Part 2, then the GHL Funnel Playbook (https://github.com/shuri-lab/GHL-connection-skill) puts it live.
+- "Build me an upsell / a checkout / an order bump / a thank-you page" → go straight to F1. Do Stage 1 (context) and Stage 3 (brand) first only if there's no brief or brand yet.
+
+Part 2 pages are **built from data**: one JSON file in, pages + previews + emails + GHL texts out. Two commands do the work: `tools/build_funnel_pages.py` (builds, computes totals, refuses rule-breaking copy) and `tools/check_funnel_pages.mjs` (looks at them in Chrome, phone and desktop).
+
 ## Always
 - **Never invent** facts, numbers, results, names, prices, testimonials or images. If something is missing, ask, or drop that spot. A live page never shows a placeholder.
 - **Never rewrite the client's own words** (the founder story above all) without asking.
@@ -57,7 +74,9 @@ Then offer the next step: client feedback, speed pass or share.
 - `stages/`: what to do, step by step
 - `knowledge/`: rules (`copy-rules.md`, `house-style.md`, `design-rules.md`), `review-checklist.md`, `feedback-log.md` (why each rule exists), `pitfalls.md`, `components/CATALOGUE.md`, `frameworks/` (landing-page framework + prompts), `prompts/`, `templates/`, `tools-and-links.md`, `references.md`, `upsell-and-bump.md`
 - `kit/`: the complete "Sales Page Generator - for clients" folder (Isabelle's kit, the build engine, unchanged; see `kit/README.md`)
+- `stages/funnel-1-…` to `funnel-5-…`: Part 2 · `knowledge/funnel-offers.md` (how to choose a bump and an upsell, and what each page must do)
 - `tools/`:
+  - `build_funnel_pages.py` + `funnel_templates/` (Part 2 pages from JSON), `check_funnel_pages.mjs` (their visual check)
   - `rebuild.sh` (one-command build), `expand_body.py`, `optimize_images.py`
   - `shoot.mjs` (screenshots + fold measurements)
   - `mac/` and `snippets.md`

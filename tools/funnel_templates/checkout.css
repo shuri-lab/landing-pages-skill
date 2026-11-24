@@ -1,0 +1,97 @@
+/* ---------- left column ---------- */
+#gtc{font-family:%%BODY%%;color:%%INK%%;max-width:520px;margin:0 auto;padding:8px 4px 24px}
+#gtc *{box-sizing:border-box}
+#gtc .lg{display:block;height:34px;width:auto;margin:0 0 18px}
+#gtc .pill{display:inline-block;background:%%ACCENT%%;color:%%ON_ACCENT%%;font:800 12px/1 %%HEAD%%;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;margin-bottom:12px}
+#gtc h1{font:800 26px/1.2 %%HEAD%%;margin:0 0 14px;color:%%INK%%}
+#gtc h1 span{color:%%ACCENT_TEXT%%}
+#gtc .mock{display:block;width:100%;height:auto;margin:6px 0 18px}
+#gtc .box{background:%%INK%%;color:#fff;border-radius:16px;padding:20px 20px 18px}
+#gtc .box h2{font:700 15px/1 %%HEAD%%;text-transform:uppercase;letter-spacing:.08em;margin:0 0 14px;color:#fff}
+#gtc ul{list-style:none;margin:0;padding:0}
+#gtc li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:16px;line-height:1.35}
+#gtc li:last-child{border-bottom:0}
+#gtc .ck{flex:0 0 22px;height:22px;border-radius:50%;background:%%ACCENT%%;color:%%ON_ACCENT%%;font:900 13px/22px %%BODY%%;text-align:center;margin-top:1px}
+#gtc li b{font-weight:900}
+#gtc li s{color:rgba(255,255,255,.55);margin-left:6px;white-space:nowrap}
+#gtc .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:14px;border-top:2px solid %%ACCENT%%;font-size:16px}
+#gtc .tot s{color:rgba(255,255,255,.6)}
+#gtc .now{display:flex;justify-content:space-between;align-items:baseline;margin-top:6px;font:800 22px/1.2 %%HEAD%%}
+#gtc .now span:last-child{color:%%ON_ACCENT%%;background:%%ACCENT%%;border-radius:8px;padding:2px 10px}
+#gtc .g{display:flex;gap:12px;align-items:flex-start;margin-top:18px;padding:14px 16px;border:2px dashed %%ACCENT%%;border-radius:14px;font-size:15px;line-height:1.45}
+#gtc .g b{display:block;font:700 15px/1.3 %%HEAD%%;margin-bottom:3px}
+#gtc .gi{flex:0 0 34px;height:34px;border-radius:50%;background:%%INK%%;color:#fff;font:900 16px/34px %%BODY%%;text-align:center}
+#gtc .gtc-m{display:none}
+
+/* phone: compact summary only */
+@media(max-width:767px){
+ #gtc{padding:0}
+ #gtc .gtc-d{display:none}
+ #gtc .gtc-m{display:block}
+ .gtc-m .mlg{display:block;height:22px;width:auto;margin:2px auto 10px}
+ .gtc-m .card{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;background:%%INK%%;color:#fff;border-radius:14px;padding:10px 12px}
+ .gtc-m .card img{width:96px;height:auto;display:block}
+ .gtc-m .t{font:800 16px/1.2 %%HEAD%%;margin:0 0 3px}
+ .gtc-m .inc{font-size:12.5px;line-height:1.35;color:rgba(255,255,255,.78);margin:0 0 6px}
+ .gtc-m .pr{display:flex;align-items:center;gap:8px;font:800 14px/1 %%HEAD%%}
+ .gtc-m .pr s{color:rgba(255,255,255,.55);font-weight:600}
+ .gtc-m .pr b{background:%%ACCENT%%;color:%%ON_ACCENT%%;border-radius:6px;padding:4px 8px;font-size:15px}
+ .gtc-m .tr{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:8px 0 0;font:700 11.5px/1.2 %%BODY%%;color:#4a4a55}
+ .gtc-m .tr span:before{content:"✓ ";color:%%ACCENT_TEXT%%;font-weight:900}
+ /* less empty space around the GHL rows on phones */
+ [class*="section-"]:has(.c-order-form){padding-top:6px!important;padding-bottom:6px!important}
+ .c-column:has(#%%ROOT%%)>.inner,.c-column:has(.c-order-form)>.inner{padding-top:4px!important;padding-bottom:4px!important}
+}
+
+/* ---------- GHL order form ---------- */
+.c-order-form,.c-order-form *{font-family:%%BODY%%}
+.c-order-form .order-form__surface{background:#fff;border:1px solid %%LINE%%!important;border-radius:16px!important;box-shadow:0 10px 30px rgba(%%INK_RGB%%,.07)!important;padding:22px 20px!important}
+/* steps 1 + 2 */
+.c-order-form{counter-reset:gtstep}
+.c-order-form .order-form__headline,.c-order-form .order-form__pay-head{display:flex!important;align-items:center;gap:10px;font:800 19px/1.2 %%HEAD%%!important;color:%%INK%%!important;margin:0 0 14px!important;letter-spacing:0}
+.c-order-form .order-form__headline:before,.c-order-form .order-form__pay-head:before{counter-increment:gtstep;content:counter(gtstep);flex:none;width:28px;height:28px;border-radius:50%;background:%%INK%%;color:#fff;font:800 14px/28px %%HEAD%%;text-align:center}
+.c-order-form .order-form__subheadline{display:none!important}
+/* inputs: clear boxes instead of a thin underline */
+.c-order-form .order-form__field-grid{gap:12px 14px!important}
+.c-order-form .order-form__label{display:block;font:700 14px/1.2 %%BODY%%!important;color:%%INK%%!important;margin:0 0 6px!important;text-transform:none!important;letter-spacing:0!important}
+.c-order-form .order-form__input{box-sizing:border-box!important;width:100%!important;height:50px!important;padding:0 14px!important;background:#FAF9F7!important;border:1.5px solid #D6D2CA!important;border-radius:10px!important;font:400 16px/1 %%BODY%%!important;color:%%INK%%!important;box-shadow:none!important;outline:none!important;transition:border-color .15s,box-shadow .15s,background .15s}
+.c-order-form .order-form__input::placeholder{color:#9A968F!important;opacity:1}
+.c-order-form .order-form__input:hover{border-color:#B9B4AA!important}
+.c-order-form .order-form__input:focus{background:#fff!important;border-color:%%ACCENT%%!important;box-shadow:0 0 0 4px rgba(%%ACCENT_RGB%%,.12)!important}
+.c-order-form .gt-help{display:block;font:400 12.5px/1.3 %%BODY%%;color:#6b6b75;margin-top:6px}
+/* no "Select Product" table: the product is already chosen (stays selected, just hidden) */
+.c-order-form .order-form__offer{display:none!important}
+.c-order-form .order-form__summary-row:not(.order-form__summary-row--total){display:none!important}
+.c-order-form .order-form__summary{margin-top:14px!important;padding-top:4px!important}
+.c-order-form .order-form__summary-row--total{font:800 16px/1.2 %%HEAD%%!important;color:%%INK%%!important}
+
+/* ---------- order bump: make it pop ---------- */
+.c-order-form .order-form__bumps{margin:18px 0 0!important}
+.c-order-form .order-form__bump{position:relative;display:grid!important;grid-template-columns:auto auto 1fr;align-items:start;column-gap:10px;padding:0 14px 14px!important;background:%%CREAM%%!important;border:2.5px dashed %%ACCENT%%!important;border-radius:14px!important;overflow:hidden;animation:gtglow 2.2s ease-in-out infinite;box-shadow:none}
+.c-order-form .order-form__bump:has(.order-form__bump-check:checked){background:%%ACCENT_TINT%%!important;border-style:solid!important;animation:none;box-shadow:0 0 0 4px rgba(%%ACCENT_RGB%%,.12)}
+@keyframes gtglow{0%,100%{box-shadow:0 0 0 0 rgba(%%ACCENT_RGB%%,.0)}50%{box-shadow:0 0 0 6px rgba(%%ACCENT_RGB%%,.16)}}
+.c-order-form .gt-bump-top{grid-column:1/-1;margin:0 -14px 12px;background:%%ACCENT%%;color:%%ON_ACCENT%%;text-align:center;font:800 12.5px/1 %%HEAD%%;letter-spacing:.06em;text-transform:uppercase;padding:9px 10px}
+.c-order-form .gt-arrow{grid-column:1;align-self:start;margin-top:1px;width:30px;height:24px;color:%%ACCENT_TEXT%%;animation:gtnudge 1s ease-in-out infinite}
+.c-order-form .gt-arrow svg{display:block;width:30px;height:24px}
+@keyframes gtnudge{0%,100%{transform:translateX(-3px)}50%{transform:translateX(4px)}}
+.c-order-form .order-form__bump-check{grid-column:2;width:24px!important;height:24px!important;margin:1px 0 0!important;accent-color:%%ACCENT%%;cursor:pointer;flex:none}
+.c-order-form .order-form__bump-body{display:contents!important}
+.c-order-form .order-form__bump-headline,.c-order-form .order-form__bump-oto,.c-order-form .order-form__bump-desc{text-align:left!important}
+.c-order-form .order-form__bump-headline,.c-order-form .order-form__bump-oto{grid-column:3;min-width:0}
+.c-order-form .order-form__bump-desc{grid-column:1/-1;margin-top:8px!important}
+.c-order-form .order-form__bump-desc:after{content:"";display:block;clear:both}
+.c-order-form .gt-bump-img{float:right;width:110px;height:auto;margin:2px 0 6px 12px;border-radius:8px}
+.c-order-form .order-form__bump-headline{font:800 17px/1.25 %%HEAD%%!important;color:%%INK%%!important;margin:0 0 4px!important;text-decoration:underline;text-decoration-color:rgba(%%ACCENT_RGB%%,.45);text-underline-offset:3px}
+.c-order-form .order-form__bump-oto{font:800 13.5px/1.3 %%BODY%%!important;color:%%ACCENT_TEXT%%!important;margin:0 0 6px!important}
+.c-order-form .order-form__bump-desc{font:400 14.5px/1.45 %%BODY%%!important;color:#2b2b33!important}
+.c-order-form .order-form__bump-desc b{font-weight:900;color:%%INK%%}
+.c-order-form .order-form__bump-price{display:none!important}
+@media(max-width:400px){.c-order-form .gt-bump-img{width:96px}.c-order-form .order-form__bump-headline{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.c-order-form .order-form__bump,.c-order-form .gt-arrow{animation:none}}
+#gtc .legal,.gtc-m .legal{margin:14px 0 0;font-size:12.5px;color:#6b6b75;text-align:center}
+#gtc .legal a{color:#6b6b75}
+.c-order-form .gt-guar{display:none}
+.c-order-form .order-form__bump-headline{text-wrap:balance}
+.c-order-form .order-form__summary+.order-form__payment,.c-order-form .order-form__pay-head{margin-top:14px!important}
+/* phones: the left column is hidden there, so the guarantee shows under the button */
+@media(max-width:767px){.c-order-form .gt-guar{display:block;margin-top:14px;padding:12px 14px;border:2px dashed %%ACCENT%%;border-radius:12px;font:400 14.5px/1.45 %%BODY%%;color:%%INK%%}.c-order-form .gt-guar b{display:block;font:800 15px/1.3 %%HEAD%%;margin-bottom:2px}}

@@ -1,0 +1,206 @@
+{
+  "_about": "Fill in every REPLACE-ME. Text may use <b>, <mark>, <span> and <br>. Remove \"bump\" or \"upsells\" if the offer has none. Totals and savings are computed. Full example: examples/rickey-headstart/funnel-pages/funnel-pages.json",
+  "client": "REPLACE-ME",
+  "slug": "REPLACE-ME",
+  "domain": "REPLACE-ME",
+  "root_prefix": "gt",
+  "assets_base": "REPLACE-ME (public folder that holds images/, e.g. https://OWNER.github.io/REPO; leave empty while you only preview)",
+  "sales_page": "REPLACE-ME (path from this file to the sales page HTML)",
+  "brand": {
+    "name": "REPLACE-ME",
+    "accent": "#000000",
+    "ink": "#101017",
+    "cream": "#FFF8E7",
+    "line": "#E7E3DC",
+    "heading_font": "REPLACE-ME,sans-serif",
+    "body_font": "REPLACE-ME,sans-serif",
+    "hand_font": "",
+    "fonts_url": "REPLACE-ME (Google Fonts css2 URL with the weights: headings 600 to 900, body 400, 700, 900)",
+    "logo_on_light": "REPLACE-ME (a DARK logo: it sits on white)",
+    "logo_on_dark": "REPLACE-ME (a WHITE or light logo: it sits on the dark header)"
+  },
+  "legal": {
+    "privacy": "",
+    "terms": "",
+    "refund": ""
+  },
+  "links": {
+    "course": "",
+    "community": "",
+    "support": ""
+  },
+  "main": {
+    "name": "REPLACE-ME",
+    "price": "$REPLACE-ME",
+    "headline": "REPLACE-ME (the sales page promise, approved words)",
+    "image": {
+      "small": "images/REPLACE-ME-720.webp",
+      "large": "images/REPLACE-ME-1280.webp"
+    },
+    "includes_line": "REPLACE-ME (one line for the phone card, 62 characters or less)",
+    "items": [
+      {
+        "name": "REPLACE-ME",
+        "value": "$REPLACE-ME"
+      }
+    ],
+    "values_approved": false,
+    "guarantee": {
+      "title": "REPLACE-ME",
+      "text": "REPLACE-ME"
+    },
+    "guarantee_source": "REPLACE-ME",
+    "trust": [
+      "One-time payment",
+      "Instant access",
+      "REPLACE-ME refund"
+    ],
+    "email_help": "Your course login is sent here.",
+    "order_button": "GET INSTANT ACCESS →",
+    "guarantee_covers_bump": "REPLACE-ME (true or false: ask)"
+  },
+  "bump": {
+    "name": "REPLACE-ME",
+    "price": "$REPLACE-ME",
+    "headline": "Yes! Add REPLACE-ME",
+    "oto": "Only $REPLACE-ME today. One-time payment.",
+    "description": "REPLACE-ME (one pain + one number + one promise, about 130 characters)",
+    "image": "images/REPLACE-ME-320.webp",
+    "delivers": "REPLACE-ME (its own small course, granted only by the bump workflow)",
+    "sold_elsewhere": "REPLACE-ME (true or false: ask)"
+  },
+  "upsells": [
+    {
+      "slug": "upsell",
+      "name": "REPLACE-ME",
+      "price": "$REPLACE-ME",
+      "alert_1": "Your order is confirmed! You'll have access to REPLACE-ME in the next 5 minutes.",
+      "alert_2": "Don't close this page. Take a look at this exclusive one-time opportunity first ↓",
+      "headline": "You Just Unlocked Your REPLACE-ME. Now <mark>REPLACE-ME (the next result they want)</mark>…",
+      "image": {
+        "small": "images/REPLACE-ME-720.webp",
+        "large": "images/REPLACE-ME-1280.webp"
+      },
+      "image_alt": "REPLACE-ME",
+      "sub": "REPLACE-ME",
+      "bridge_headline": "REPLACE-ME gets you REPLACE-ME.<br><mark>This is how you REPLACE-ME.</mark>",
+      "bullets": [
+        "REPLACE-ME",
+        "REPLACE-ME",
+        "REPLACE-ME"
+      ],
+      "items": [
+        {
+          "name": "REPLACE-ME",
+          "benefit": "REPLACE-ME, so you REPLACE-ME.",
+          "value": "$REPLACE-ME",
+          "thumb": "",
+          "modules": []
+        }
+      ],
+      "values_approved": false,
+      "guarantee": {
+        "title": "REPLACE-ME",
+        "text": "REPLACE-ME"
+      },
+      "guarantee_source": "REPLACE-ME",
+      "yes": "YES! Add REPLACE-ME to My Order For Only $REPLACE-ME",
+      "no": "No thanks, I'll keep REPLACE-ME, and take longer to get REPLACE-ME.",
+      "delivers": "REPLACE-ME",
+      "sold_elsewhere": "REPLACE-ME (true or false: ask)",
+      "access_confirmed": false,
+      "guarantee_covers_upsell": false,
+      "founder_note": {
+        "text": "REPLACE-ME or delete this block (only words the client gave or approved)",
+        "by": "REPLACE-ME",
+        "photo": "",
+        "source": "REPLACE-ME"
+      },
+      "proof": [
+        {
+          "text": "REPLACE-ME or delete (a real quote)",
+          "by": "REPLACE-ME",
+          "image": "",
+          "source": "REPLACE-ME"
+        }
+      ],
+      "faq": [
+        {
+          "q": "REPLACE-ME or delete (the buyer's real doubt)",
+          "a": "REPLACE-ME"
+        }
+      ]
+    }
+  ],
+  "thankyou": {
+    "title": "You're in | REPLACE-ME",
+    "headline": "You're in. Your <span>REPLACE-ME</span> begins now.",
+    "sub": "Everything is below and in your email. REPLACE-ME",
+    "steps": [
+      {
+        "title": "REPLACE-ME",
+        "buttons": [
+          {
+            "label": "Open my course →",
+            "link": "course"
+          }
+        ],
+        "note": "First time? Tap \"Open my course\" in the email I just sent you. It signs you in."
+      },
+      {
+        "title": "Get your guides.",
+        "text": "REPLACE-ME (where they are, never a link to a file)",
+        "note": "Added REPLACE-ME? It's in the same place, next to your course."
+      }
+    ],
+    "quote": {
+      "text": "REPLACE-ME or delete this block",
+      "by": "REPLACE-ME",
+      "photo": "",
+      "photo_position": "50% 0",
+      "source": "REPLACE-ME"
+    },
+    "help": "Didn't get the email? Check spam or Promotions."
+  },
+  "emails": {
+    "from_name": "REPLACE-ME",
+    "main": {
+      "subject": "You're in. REPLACE-ME",
+      "preview": "REPLACE-ME",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You're in. Here's everything in one place:",
+        "1. Your course: [Open my course](login).<br>This link signs you in and works for 24 hours. The first time, you'll choose your password.<br>After that, [log in here](course) with {{contact.email}}. No password yet? Click \"Forgot password\" on that page.",
+        "2. REPLACE-ME: it's inside your course, in the first lesson.",
+        "REPLACE-ME (one action for today, with the time it takes)",
+        "REPLACE-ME (first name)",
+        "P.S. Stuck on anything? REPLACE-ME"
+      ]
+    },
+    "bump": {
+      "subject": "Your REPLACE-ME",
+      "preview": "REPLACE-ME",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "REPLACE-ME you added to your order is ready: [Open it](login).",
+        "REPLACE-ME"
+      ]
+    },
+    "upsell": {
+      "subject": "Your REPLACE-ME is ready",
+      "preview": "REPLACE-ME",
+      "paragraphs": [
+        "Hey {{contact.first_name}},",
+        "You added REPLACE-ME to your order. It's in your course area now: [Open it](login).",
+        "REPLACE-ME"
+      ]
+    }
+  },
+  "sources": {
+    "numbers": {
+      "REPLACE-ME": "file and how it was counted, or the client's words"
+    }
+  },
+  "_optional": "main.pill, main.order_button; upsells: pill, progress, title, offer_tag, price_note, lead_1, lead_2, hide_name_label (true when the image already shows the name), jump_button (text of a link down to the offer), proof_headline, proof [{text, by, image, image_alt, source}], founder_note {text, by, photo, photo_position, source}, faq_headline, faq [{q, a}], video (instead of image); bump.banner; thankyou.quote (only with a source); labels {what_you_get, total, offer_head, save, now, order_subtext, guarantee_scope}; brand.alert_color; real_deadline; accepted {\"id of a CHECK\": \"why it's fine\"}",
+  "accepted": {}
+}

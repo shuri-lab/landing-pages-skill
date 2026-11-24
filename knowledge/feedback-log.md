@@ -683,3 +683,34 @@ Each entry: **David's request** → **general rule for any sales page** → **wh
 
 ---
 
+---
+
+# Part 4: After the pages, finishing and testing the funnel (Nov 23 and 24 2026)
+
+### P4.1 "they just need the access to their course or courses and the pdfs" (about a "Welcome to The Starter Product List!" badge email)
+- **He said:** it "just doesnt make any sense to send users, it is not saying the right things not in the right language, not in Rickey voice".
+- **Rule:** buyers get only on-brand emails in the founder's voice, with access and files. Every platform's own welcome, badge and certificate email is off.
+- **Built:** the three emails in `examples/rickey-headstart/funnel-pages/funnel-pages.json`; the badges and stock emails turned off in GHL (GHL Funnel Playbook, Stages 9 and 10).
+
+### P4.2 "I don't want to put them in a GitHub or anything like that"
+- **Rule:** paid files live behind the buyer's login. Never on public hosting, never linked from the thank-you page.
+- **Built:** the thank-you page says where the PDF is; `build_funnel_pages.py` refuses a file link on it.
+
+### P4.3 "The order bump… is optional… ok as long as they dont get the products list if they didnt get the order bump"
+- **Rule:** nobody receives what they didn't buy. The bump box starts unticked, its file is in its own course, and the email that goes to everyone never names it. Naming it on the shared thank-you page is fine as a question ("Added …?").
+- **Built:** `funnel-offers.md` "Who gets what"; the build fails if the main email names the bump or an upsell.
+
+### P4.4 "they should be able to find both courses in their account"
+- **Rule:** one login, everything they bought side by side.
+
+### P4.5 "do another test where you buy offer 1 and then offer 2 as well… when you buy offer 1 and you decline offer 2"
+- **Rule:** test the accept path and the decline path, with and without the bump.
+
+### P4.6 WhatsApp link and two images for the thank-you page
+- **Rule:** a community step has the channel's real picture, one button, and its QR code on desktop only (a phone can't scan itself). Check that the QR and the button open the same place.
+
+### P4.7 A face cut off in a round photo
+- **Rule:** set the focal point of every cropped face and look at the screenshot.
+
+### P4.8 "do the skills… have everything they need to also build all the rest of the pages of a funnel"
+- **Rule:** the playbook must build the whole funnel for a new offer, not only describe Rickey's. → Part 2 (F1 to F5), the generator and its checker.

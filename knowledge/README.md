@@ -17,5 +17,7 @@
 | `templates/brief-template.md` | Stage 1: the Project Brief |
 | `tools-and-links.md` | Every tool and link, and who has access |
 | `references.md` | Reference pages and repos (JJ pages, Game Tape, upsell), and what we took from each |
-| `upsell-and-bump.md` | Building an upsell page, the checkout's left column, the order bump |
-| `ghl-notes-for-later.md` | GoHighLevel notes (out of scope; for the future GHL skill) |
+| `funnel-offers.md` | **Before F1.** How to choose the bump and the upsell, what each page must do, who gets what |
+| `upsell-and-bump.md` | Part 2: every design value of the upsell page, the checkout column and the order bump |
+| `templates/funnel-pages.json` | F1: the one file all Part 2 pages are built from |
+| `ghl-notes-for-later.md` | Superseded: points to the GHL Funnel Playbook |

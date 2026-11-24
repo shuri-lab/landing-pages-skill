@@ -14,3 +14,13 @@ One file per stage. Claude reads each one in full before starting that stage (`S
 | 7 | `7-feedback-rounds.md` | Client rounds: back up, apply, log, rebuild, report |
 | 8 | `8-speed.md` | WebP at display size, light videos, lazy loading |
 | 9 | `9-share.md` | GitHub repo + Pages, README, paste-ready file, the loader for page builders |
+
+**Part 2: the rest of the funnel's pages**
+
+| # | File | In one line |
+|---|---|---|
+| F1 | `funnel-1-plan.md` | Choose the bump and the upsell, write all the copy in one JSON file |
+| F2 | `funnel-2-checkout-and-bump.md` | Checkout column, restyled order form, the bump |
+| F3 | `funnel-3-upsell.md` | The one-click upsell page, reviewed as the buyer |
+| F4 | `funnel-4-thank-you-and-emails.md` | Thank-you page, one email per product |
+| F5 | `funnel-5-review-and-handoff.md` | Checks, feedback, hand-off to the GHL Funnel Playbook |
