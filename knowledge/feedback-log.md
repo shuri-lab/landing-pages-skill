@@ -442,7 +442,7 @@ Format for each item: **David's words** → *General rule* → **Implementation*
 - **Impl:** `<div class="press"><p class="press-lbl">Brands Rickey has worked with</p><div class="marquee"><div class="marquee-track">@@PRESS@@</div></div></div>`. It holds 6 logos (Subway, Puma, McDonald's, Meta, Casio, DJI) plus 6 `aria-hidden` copies. CSS is in C2. The section 12 logo strip was removed because the logos now show in the slider and in section 3.
 
 **1.18** "when you click get instant access, you go to this offer stack section… I like the offer stack design"
-- *Rule:* Every CTA jumps to the offer stack (`#buy`). Only the offer stack's button goes to checkout, so the checkout link lives in one place.
+- *Rule (**replaced on Nov 24 by P4.9**: every button goes straight to checkout):* Every CTA jumped to the offer stack (`#buy`). Only the offer stack's button went to checkout, so the checkout link lived in one place.
 - **Impl:** All buttons are `href="#buy"`; the offer button is `href="PASTE-YOUR-CHECKOUT-LINK"`. The kit has `html{scroll-behavior:smooth}`. Offer v1 was a clean white card: `.offer-top` title "Everything You Get Today" with the sub "One-time $27 · instant access", then "1 What you get" with value rows, a `.totals` block (~~$230~~, "Today: just", `$27.` at 64px red), a `.bump` ("Optional · add at checkout for $17", dashed red), "2 Your guarantee", one button, and "One-Time Payment • Instant Access".
 - **Verif:** The click test in 1.15.
 
@@ -714,3 +714,10 @@ Each entry: **David's request** → **general rule for any sales page** → **wh
 
 ### P4.8 "do the skills… have everything they need to also build all the rest of the pages of a funnel"
 - **Rule:** the playbook must build the whole funnel for a new offer, not only describe Rickey's. → Part 2 (F1 to F5), the generator and its checker.
+
+### P4.9 Sales page v1.1 build ticket (Nov 24): "Point every landing CTA straight to checkout"
+- **He asked for:** every button to link directly to the checkout instead of `#buy`, with the "Everything You Get Today" section left exactly as it is ("it still sells to people who read top-to-bottom"). Then, for this playbook: "Yes, update it".
+- **Rule:** every sales page button, the sticky bar included, goes straight to checkout. The offer stack stays, with its own button. This replaces 1.18.
+- **Built:** `@@CHECKOUT@@` in `body-src.html`, filled once from `page-config.json`; `expand_body.py` stops if a button still jumps down the page; `grade.py` fails the routing item.
+- **Not proven:** no traffic data compares this with jumping to the stack.
+- **Also in the ticket (copy):** the section-2 header ends on what the buyer gets ("You Need a Plan That Gets You Sales."), and "watch your milestones stack up" was cut from the third outcome.

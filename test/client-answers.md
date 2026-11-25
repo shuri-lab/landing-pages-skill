@@ -12,7 +12,7 @@ These are the **facts and decisions** the client gave during the real build. Des
 - The tool's copy and the older offer documents mention "templates" and "milestone playbooks". **They are NOT included.**
 - Guarantee: do the 30-day challenge, post every day, and if there's no sale within 90 days, full refund.
 - There is an order bump at checkout (The Starter Product List, $17). **Do not mention it on the sales page.**
-- Checkout link: not ready yet. Use `PASTE-YOUR-CHECKOUT-LINK` on the one checkout button.
+- Checkout link: not ready yet. Use `PASTE-YOUR-CHECKOUT-LINK` on every button (leave `checkout` empty in `page-config.json`). Every button goes straight to checkout.
 
 **Hero**
 - **Headline:** option 1 from the tool output, "Get Your First TikTok Shop Sales in the Next 30 Days, Starting From Zero", with the dash removed.

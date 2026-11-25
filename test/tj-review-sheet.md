@@ -13,7 +13,7 @@ Score ___ / 50 · Hard fails: ________
 | Does the desktop hero look as strong (two columns, big mockup, logos visible)? | |
 | Scroll their whole page on a phone. Does it alternate dark and light sections, with a visual under each claim? | |
 | Do the sliders move and never show an empty gap? | |
-| Does every button say the same thing and jump to the offer box? | |
+| Does every button say the same thing and go straight to checkout? | |
 | Does the offer box list only the course, the 30-day challenge and the private channel, with crossed values and "You save $174"? | |
 | Is the guarantee its own block? | |
 | Any made-up fact, testimonial or income claim? (hard fail) | |

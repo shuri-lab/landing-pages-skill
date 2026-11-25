@@ -55,7 +55,7 @@ Part 2 pages are **built from data**: one JSON file in, pages + previews + email
 - **Never invent** facts, numbers, results, names, prices, testimonials or images. If something is missing, ask, or drop that spot. A live page never shows a placeholder.
 - **Never rewrite the client's own words** (the founder story above all) without asking.
 - **Phone first:** 393×852 (iPhone 16). The hero, through the button, fits the first screen. Then 1280×800, 1440×900 and 1920×1080.
-- **One button label everywhere.** Every button jumps to the offer stack; only that one goes to checkout.
+- **One button label everywhere.** Every button, the sticky bar included, goes straight to checkout, all with the same link.
 - **Promise sales or results, never income.** Label numbers correctly.
 - **Never put passwords, API keys or payment details in any file.** Logins for tools are "ask TJ".
 - **Never publish, upload, push or email** without the person's OK.

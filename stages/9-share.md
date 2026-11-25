@@ -9,7 +9,7 @@
 2. **Repo:** ask the person to create an empty GitHub repo (or do it in the browser if they're signed in). Put in: `index.html` (= index-final), the `images/` the page uses, a `page-source/` folder (body-src, copy, brand-kit, learned-rules, image-prompts, paste-ready), and the client's project files if the client agrees they can be shared. Run `tools/rebuild.sh … --publish <repo> <pages URL>` to copy them.
 3. **Before a public push:** scan for secrets (`grep -rIE "sk_live|pk_live|AKIA|ghp_|xox|PRIVATE KEY|password" .`) and files over 50 MB. Confirm with the client what may be public (research, transcripts, photos with unclear licenses).
 4. **GitHub Pages:** Settings → Pages → branch `main`, folder `/ (root)`. The link works about a minute after each push.
-5. **README:** what it is, the live link, how buttons work (all jump to the offer stack; one checkout link), what's still open (placeholders, missing images, licenses), and where each source file is.
+5. **README:** what it is, the live link, how buttons work (all go straight to the checkout, one link), what's still open (placeholders, missing images, licenses), and where each source file is.
 6. **Tell the client and team** with the link and a 5-line summary. Show any email to the person before sending.
 
 ---
@@ -85,7 +85,7 @@ Local working layout during the session: `sales-page/kit/` (the kit: `1-copy 2-b
 3. What the page file is: one self-contained HTML (styles and scripts inline); images from `images/` (later `images/opt/`); fonts from Google Fonts; videos from Cloudinary with the transform used.
 4. The viewports it was tested on: iPhone 16 393×852, 1280×800, 1440×900, 1920×1080.
 5. The offer contents with values, total, price, bump, guarantee.
-6. How the buttons work: every CTA jumps to `#buy`, only the offer-stack button goes to checkout, the placeholder name to replace, the sticky phone bar.
+6. How the buttons work: every CTA goes straight to the checkout, where that link is set (`checkout` in `page-config.json`), the placeholder to replace everywhere if it isn't set yet, the sticky phone bar.
 7. "Still open": checkout, upsell, disclaimers to approve, image license to confirm, FAQs.
 8. A folders table.
 9. Brand: colors and fonts.

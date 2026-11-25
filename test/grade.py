@@ -120,11 +120,12 @@ def main():
     add('cta_label', 'One CTA label on every button', 5 if len(labels) == 1 else (2 if len(labels) == 2 else 0), 5,
         '%d buttons, %d label(s): %s' % (len(btns), len(labels), labels[:4]))
 
-    to_stack = [b for b in btns if b['href'].startswith('#')]
-    out = [b for b in btns if not b['href'].startswith('#')]
-    route_ok = len(btns) >= 3 and len(out) <= 1 and len(to_stack) >= len(btns) - 1
-    add('routing', 'Buttons jump to the offer stack; only one goes to checkout', 5 if route_ok else 0, 5,
-        '%d jump on the page, %d leave it (%s)' % (len(to_stack), len(out), [b['href'][:50] for b in out][:3]))
+    # Every button goes straight to one checkout link (the placeholder counts until the link exists).
+    stay = [b for b in btns if not b['href'].strip() or b['href'].strip().startswith(('#', 'javascript:'))]
+    links = sorted({b['href'].strip() for b in btns if b not in stay})
+    route_ok = len(btns) >= 3 and not stay and len(links) == 1
+    add('routing', 'Every button goes straight to checkout (one link)', 5 if route_ok else 0, 5,
+        '%d buttons, %d stay on the page, %d link(s): %s' % (len(btns), len(stay), len(links), [x[:60] for x in links][:3]))
 
     dashes = len(re.findall('[—–]', text))
     banned = [w for w in [x.strip() for x in a.banned.split(',') if x.strip()] if re.search(r'\b%s\b' % re.escape(w), text, re.I)]

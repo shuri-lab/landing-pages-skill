@@ -30,6 +30,9 @@ python3 -I "$KIT/check_page.py" --page "$WORK/index.html" --copy "$WORK/copy.md"
 python3 -I "$KIT/export_final.py" --in "$WORK/index.html" --out-dir "$WORK/export" --images keep >/dev/null
 echo "export $WORK/export/index-final.html + paste-ready.html"
 
+LEFT=$(grep -c 'PASTE-YOUR-CHECKOUT-LINK' "$WORK/export/index-final.html" || true)
+[ "$LEFT" = 0 ] || echo "NOTE   $LEFT line(s) still hold PASTE-YOUR-CHECKOUT-LINK: the buttons are dead until you fill \"checkout\" in page-config.json"
+
 if [ "${3:-}" = "--publish" ]; then
   REPO="${4:?repo dir}"; BASE="${5:?public base URL ending in /}"
   mkdir -p "$REPO/images/opt"

@@ -110,7 +110,7 @@ The export preloads the Google Fonts stylesheet without blocking paint (`<link r
 ### C6. Results (before → after)
 - Images, full scroll: **~15 MB → ~1,155 KB on phone, ~1,452 KB on desktop** (all variants together 1.92 MB on disk).
 - Per video clip: 892 KB → 431 KB; poster 31 → 26 KB. A full-scroll audit counted ~1.5 MB of video in total for the carousel, with duplicates not downloading again.
-- Builder page HTML: 116 KB (reported by the build), with 0 relative image paths left and 1 checkout link.
+- Builder page HTML: 116 KB (reported by the build), with 0 relative image paths left and 1 checkout link (Nov 20; since Nov 24 every button carries it).
 - The hero loads first. Everything else loads on scroll.
 
 ### C7. How it was verified

@@ -67,8 +67,8 @@ node PLAYBOOK/tools/shoot.mjs my-sales-page/index.html --out my-sales-page/shots
 5. **Component checks:**
    - Sliders: for each track, `scrollWidth/2` must exceed the container `clientWidth` (logged at 1920). For the video carousel, compare `[.vcar.clientWidth, track.scrollWidth/2]`.
    - Spacing: `r('.s3-story').top - r('.mini-marquee').bottom` = 46.
-   - CTA flow: click `.hero .btn`, wait 1.5s, then check that `#buy` top ≈ 0 and `.stickybar` doesn't have `show`.
+   - CTA flow: `[...new Set([...document.querySelectorAll('a.btn')].map(a=>a.href))]` must give exactly one link, the checkout (or the placeholder before it exists). With the real link, click the hero button and the sticky bar button: both must land on the checkout. Then scroll to `#buy`: `.stickybar` must not have `show`.
    - Images: count `[...document.images].filter(i=>i.loading!=='lazy'&&!(i.complete&&i.naturalWidth>0)).length` (should be 0). Check `naturalWidth` of specific images (`.feature img`, `.pols img`).
 6. **Screenshots:** at scale .45-.6. Section-by-section `__go(n, offset)` walks, `zoom` on regions for detail, and a wait of 1-2s after each jump.
-7. **Copy and content checks:** after every build, `check_page.py` (the copy must match `copy.md`; it flags `{FILL IN}` and `.ph` placeholders) plus greps for dashes (`—`/`–`) = 0, "steal" = 0, removed items = 0, and checkout placeholders = 1.
+7. **Copy and content checks:** after every build, `check_page.py` (the copy must match `copy.md`; it flags `{FILL IN}` and `.ph` placeholders) plus greps for dashes (`—`/`–`) = 0, "steal" = 0, removed items = 0, and checkout placeholders = 0 (or every button, while the link doesn't exist yet).
 8. **Close the loop:** run `open my-sales-page/index.html` so the client sees the new version, append the rules to `learned-rules.md`, and in the wrap-up list each change with its measured numbers and mark any line Claude wrote itself ("this is my wording, needs your OK").

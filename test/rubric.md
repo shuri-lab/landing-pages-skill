@@ -10,7 +10,7 @@
 | Desktop 1280×800 and 1440×900: hero button on the first screen | 5 |
 | No broken images | 3 |
 | One CTA label on every button | 5 |
-| Buttons jump to the offer stack; only one goes to checkout | 5 |
+| Every button goes straight to checkout, all with the same link | 5 |
 | No em or en dashes, no banned words | 5 |
 | No placeholders on the page (**hard fail if any**) | 5 |
 | Images light: WebP, under about 2 MB | 2 |

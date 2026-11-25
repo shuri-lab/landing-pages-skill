@@ -22,7 +22,6 @@ This folder is the full **"Sales Page Generator - for clients"** download from t
 | Kit says | Playbook does | Why |
 |---|---|---|
 | Hero subheadline formula starts "Steal my…" | "Follow the same plan behind…" / "Get…" | Clients ban "steal" (`knowledge/copy-rules.md`) |
-| Every button links to checkout | Every button jumps to the offer stack (`#buy`); only the offer stack button goes to checkout | One decision point; one link to change |
 | Section 3 story is text | Section 3 gets the founder photos + a logo slider | David's feedback (`knowledge/house-style.md` #16) |
 | One dark band | Dark sections about every 3rd section | David's feedback (#12) |
 | Each section has its own button label | One label everywhere | David's feedback (#8) |

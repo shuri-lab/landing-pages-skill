@@ -32,7 +32,7 @@ Then ask only for what's missing, one question at a time.
 | 11 | **Media**: founder photos, videos, screenshots, product images | Media folders | `rickey-photo.jpeg`, `rickey-bestbuy.jpeg`, 5 TikTok videos, 10 TikTok screenshots, 5 product-check screenshots, 6 brand logos |
 | 12 | **Reference pages** the client likes (structure, not branding) | Client | mycoach.jjsmithonline.com/look-younger, gametape-blue.vercel.app/offer-first-seven |
 | 13 | **Traffic source** (cold ads vs warm audience) | Client | Mostly mobile (90%), social traffic |
-| 14 | **Checkout link** (or "not ready yet") and where it will be published | Client | Not ready at build time: buttons jump to the offer stack |
+| 14 | **Checkout link** (or "not ready yet") and where it will be published | Client | Every button uses it. Not ready at build time: they all hold the placeholder until it exists (a GHL funnel's link is known from its plan: `https://<domain>/<slug>-checkout`) |
 | 15 | **Hard "never" rules** from the client | Client | No dashes, never "steal", no income promises |
 
 ## 3. Write the brief

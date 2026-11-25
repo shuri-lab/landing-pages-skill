@@ -24,9 +24,9 @@ Used in Stage 6 (Claude reviews its own page before anyone sees it) and by the t
 
 ## C. Copy
 11. **[auto] One CTA label on every button** (e.g. `GET INSTANT ACCESS · $27 →`).
-12. **[auto] Every button jumps to the offer stack** (`#buy`); only the offer stack's button goes to checkout.
+12. **[auto] Every button goes straight to checkout**, the sticky bar included, all with the same link. None jumps to `#buy`.
 13. **[auto] No em/en dashes. No "steal".** No other words on the client's "never" list.
-14. **[auto] No placeholders** (`[Insert…]`, `[image]`, `PASTE-YOUR…` except the one checkout link before it exists).
+14. **[auto] No placeholders** (`[Insert…]`, `[image]`, `PASTE-YOUR…` except the checkout link before it exists).
 15. Headline = end result + time + emotional payoff. Subheadline = how, made easy, with 3–4 value props, and the proof phrase marked. Nothing highlighted that is filler.
 16. Every number is real and correctly labeled (sales ≠ earnings). No income promises. No invented testimonials.
 17. The offer lists only what is really included. Values say "value". Total value and "you save" add up.

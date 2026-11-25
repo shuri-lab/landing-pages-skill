@@ -19,9 +19,9 @@
 2. **Write `my-sales-page/body-src.html`:**
    - Each section is `<section data-section="N" data-name="…">`.
    - Copy goes in exactly as approved in `copy.md`.
-   - Use markers for the repeated parts: `@@CTA@@`, `@@LOGOS@@`, `@@VIDEOS@@`, `@@SLIDER@@`.
+   - Use markers for the repeated parts: `@@CTA@@`, `@@CHECKOUT@@`, `@@LOGOS@@`, `@@VIDEOS@@`, `@@SLIDER@@`.
    - Put custom CSS in one commented `<style>` block at the top, with phone rules last.
-3. **Write `my-sales-page/page-config.json`:** the button label, logos, videos and slider screenshots. See `examples/rickey-headstart/page-config.json`.
+3. **Write `my-sales-page/page-config.json`:** the button label, the checkout link (`"checkout"`, empty until it exists), logos, videos and slider screenshots. See `examples/rickey-headstart/page-config.json`.
 4. **Build and check in one command:**
    ```bash
    PLAYBOOK/tools/rebuild.sh my-sales-page "Offer name | Brand"
@@ -38,7 +38,7 @@
   - all of it fits 393×852;
   - put the image first in the HTML for `fetchpriority`, and order it with CSS.
 - **Hero, on desktop:** two columns (text left, mockup right), and the logo strip still shows on the first screen at 1280×800.
-- **Buttons:** every one is `href="#buy"`. The offer stack button is the only checkout link.
+- **Buttons:** every one, the offer stack and the sticky bar included, is `href="@@CHECKOUT@@"`: straight to checkout. Keep `id="buy"` on the offer stack (the sticky bar hides there).
 - **Back up** `body-src`, `copy` and `index` as `-vN` before each round.
 - **Edit with guarded scripts** (assert the old text exists before replacing it) or the Edit tool. A failed match leaves the file untouched.
 

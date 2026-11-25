@@ -26,7 +26,7 @@ Worked example, filled on Nov 20 2026 from Rickey's project files. Where an old 
 - Name (customer-facing): TikTok Shop Headstart [Offer stack v11; Tool output v1]. The deck spells it "TikTok Shop Head Start"; the page uses "Headstart" [Course deck; learned-rules]
 - Brand: Game Tape, Rickey Eugene Brown's brand for people just starting on TikTok Shop [Brand guide]
 - Price + payment type: $27, one-time payment, instant access, no subscription [learned-rules; Tool output v1]. The v11 stack gave a range, "$12-27 · sugg. $27" [Offer stack v11]
-- Checkout link (or "not ready"): not ready at build time. Every button jumps to the offer stack (#buy); only the offer stack button goes to checkout [learned-rules]
+- Checkout link (or "not ready"): not ready at build time. Every button goes straight to checkout [learned-rules, v1.1]
 - What's included (ONLY what's really in it), one line each, with what it does:
   1. The 7-Day Headstart Course: 7 short video lessons, Rickey walking through the whole path in plain words, each lesson ending with one "Do this" task [Course deck]
      Lessons: 1 How TikTok Shop works, and start posting · 2 Getting your first 1,000 followers · 3 Pick your first products · 4 Film your first product video · 5 How to make your videos actually work · 6 Posting, and keeping your account healthy · 7 Your first sale, and what's next [Course deck, lesson title slides]

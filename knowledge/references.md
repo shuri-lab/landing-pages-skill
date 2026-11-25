@@ -26,7 +26,7 @@ How it was studied: the live page at 393×852, with JS that listed elements and 
 | Hero fits alert, logo, headline, sub, button and image on the iPhone screen | The above-the-fold rule and the measurement target | |
 | `.ly-sticky` bottom bar: "Instant access · **$27** · 14-day money-back guarantee" + "Get Instant Access →" | A sticky bar after the hero, hidden at the offer, label "Instant access · $27" + the same CTA | Their guarantee text in the bar |
 | "Featured in" press logos | "Brands Rickey has worked with" logo slider under the hero (and in section 3) | |
-| CTA label "Get Instant Access · $27 →" and every button scrolling to the stack | One label everywhere, all buttons → `#buy`, only the stack button → checkout | |
+| CTA label "Get Instant Access · $27 →" and every button scrolling to the stack | One label everywhere. We copied the jump to the stack at first; since Nov 24 every button goes straight to checkout | |
 | `.ly-stack` offer: item rows with values, a total ("$197+"), and `.ly-stack-deal` with badge "Today Only · Save 86%", "Normal price ~~$97~~", "Today just $27", "One-time payment · instant digital access", full-width button | Crossed values on the right, a "Total value" bar, a bordered deal box with a "You save $174" badge on its edge, "Today: just $27.", a note, the button and a trust row | "Today only" (we have no deadline) and their colors |
 | Order bump (JJ: $9 vs regular $17) | A $17 add-on box after the deal (later moved out of the page) | |
 | FAQ section | Planned, with the client supplying the questions later | |

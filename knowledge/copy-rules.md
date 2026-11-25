@@ -7,7 +7,7 @@ Every rule here came from David's feedback on the Rickey page (Nov 2026) or from
 2. **Never rewrite the client's own words** (especially the founder's story) without asking. Propose; they approve. After one rejected rewrite, restore the approved text at once.
 3. **No em dashes (—) or en dashes (–)** anywhere. Use a comma, colon, "to", "for" or parentheses.
 4. **No "steal"** (buttons say GET). Check the client's own "never" list too.
-5. **One button label everywhere**, with the price: `GET INSTANT ACCESS · $27 →`. Every button jumps to the offer stack; only that one goes to checkout.
+5. **One button label everywhere**, with the price: `GET INSTANT ACCESS · $27 →`. Every button goes straight to checkout.
 6. **5th-grade clarity.** Short sentences. One idea per line. A claim carries **one** number, not five. ("Get my list of 37 products people are buying right now", not "37 picks across 8 lanes, 8 viral, plus a calendar".)
 7. **Headline** = end result + time + emotional payoff. **Subheadline** = how, made easy, 3–4 value props. **Eyebrow pill** = proof, not the founder's name.
 8. **Promise sales/results, never income.** Next to any revenue number: "Those are my results… Not a promise of what you'll make." Label numbers correctly (sales/GMV ≠ earnings).
@@ -34,9 +34,9 @@ Every rule here came from David's feedback on the Rickey page (Nov 2026) or from
 | A proof headline must fit the type of proof. | "Wait… This Actually Works for People Like Me?" (student proof) became "Don't Take My Word for It." (owner proof) | A mismatched promise reads as fake. |
 | Keep the risk-reducer under the button short. Refund terms belong in the guarantee. | Hero fine print became "One-time $27 · instant access", plus the same line in the top alert bar | The long refund sentence cluttered every button (#16). The guarantee later got its own block (#22). |
 | The hero pill is proof only, not the creator's name. | "$4M+ in TikTok Shop sales · top-1% creator" | #17 |
-| Section 2 headline: action and ongoing, not one-off. | "You Need to Start Posting." instead of "Post Your First One." | #16 |
+| Section 2 headline: action and ongoing, not one-off; end on what they get. | "Post Your First One." → "You Need to Start Posting." → "You Need a Plan That Gets You Sales." (v1.1, Nov 24) | #16, P4.9 |
 | Emphasize proof and the main benefits, not the mechanics. Ask which phrases to emphasize. | Highlight "behind Rickey's $4M+ in TikTok Shop sales"; red bold on "find winning products", "make viral videos", "make sales". Not "one video a day". | #20 reversed Claude's carry-over emphasis |
-| Use one CTA label everywhere, with the price. (Adopted after Slice A.) | Every button "GET INSTANT ACCESS · $27 →". Later, all buttons jump to the offer stack `#buy` and only that button goes to checkout. | #20: consistency and price clarity |
+| Use one CTA label everywhere, with the price. (Adopted after Slice A.) | Every button "GET INSTANT ACCESS · $27 →". On Nov 20 they jumped to the offer stack; since v1.1 (Nov 24) every button goes straight to checkout. | #20: consistency and price clarity |
 | Never invent facts. Flag claims that need backing up. Leave the client's disclaimers as a `{FILL IN}` note until they supply them. | Footer `{FILL IN: your disclaimers…}`; logo partnerships flagged | Kit rule and legal exposure |
 | Leave quotes and parenthetical lines in `copy.md` as plain lines, without `>` or `(`, so the checker verifies them. | `"I'm not lazy…"` lost its blockquote; "(Those are my results…)" lost its parentheses | `check_page.py` skips lines starting with `>`, `<!--`, `(` or `[` |
 

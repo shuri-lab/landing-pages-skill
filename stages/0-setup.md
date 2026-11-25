@@ -19,7 +19,7 @@ Do this quietly, then report in 2–3 lines.
     brand-kit.md     Stage 3
     image-plan.md    Stage 4 (+ image-prompts.md)
     body-src.html    Stage 5 (the page body you write, with @@markers@@)
-    page-config.json Stage 5 (button label, logos, videos, slider)
+    page-config.json Stage 5 (button label, checkout link, logos, videos, slider)
     body.html        made by tools/rebuild.sh from body-src.html (don't edit it)
     index.html       built page
     learned-rules.md every client decision and piece of feedback, one line each

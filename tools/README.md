@@ -3,7 +3,7 @@
 | Tool | What it does | Run |
 |---|---|---|
 | `rebuild.sh` | One command: expand repeated parts → kit build → kit check → export (→ optional publish into a repo) | `tools/rebuild.sh my-sales-page "Title \| Brand" [--publish <repo> <pages URL>]` |
-| `expand_body.py` | Writes the button label, logo strips, video cards and screenshot slider from `page-config.json` (used by rebuild.sh) | `python3 tools/expand_body.py body-src.html body.html --config page-config.json` |
+| `expand_body.py` | Writes the button label, checkout link, logo strips, video cards and screenshot slider from `page-config.json` (used by rebuild.sh) | `python3 tools/expand_body.py body-src.html body.html --config page-config.json` |
 | `optimize_images.py` | WebP at display size by file-name role (hero-, product-, brand-, shot-…). Needs Pillow | `python3 tools/optimize_images.py my-sales-page/images` |
 | `shoot.mjs` | Real phone (393×852) and desktop screenshots + first-screen measurements through Chrome. Needs Node 22+ and Chrome | `node tools/shoot.mjs my-sales-page/index.html --out my-sales-page/shots --full` |
 | `mac/pdf2png.js`, `mac/pdf2png-n.js` | PDF pages to PNG + the text layer (macOS, no installs) | `osascript -l JavaScript tools/mac/pdf2png.js file.pdf outdir 1400` |

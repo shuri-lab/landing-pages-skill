@@ -35,7 +35,7 @@ A folder `my-sales-page/` (zip it or push it to a repo) with:
 - [ ] `grade.txt`: the output of `python3 test/grade.py --page my-sales-page/index.html --copy my-sales-page/copy.md`
 
 ## How it's graded
-- **50 points automatic:** `test/grade.py`. Fold fit, sideways scroll, broken images, one CTA label, button routing, dashes and banned words, placeholders, image weight. Our real page scores 50/50; our first draft scored 25/50.
+- **50 points automatic:** `test/grade.py`. Fold fit, sideways scroll, broken images, one CTA label, button routing, dashes and banned words, placeholders, image weight. Our real page scores 50/50; our first draft scored 28/50.
 - **50 points judged by TJ:** copy, visual quality next to the reference screenshots, and process. See `rubric.md`.
 - **Pass:** 85 or more, with **no hard fail.** The hard fails are:
   - the phone button is below the fold;

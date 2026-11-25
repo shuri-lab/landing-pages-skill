@@ -58,7 +58,7 @@ Things that went wrong while building the Rickey page, and the fix. Read before 
 | 26 | Made-up stack values | Label them placeholders in the report; ask the client to approve |
 | 27 | README and `learned-rules.md` went stale (still say originals, bump on page, checkout placeholder) | Update both in the same commit as each feedback round |
 | 28 | Thank-you fragment still uses `images/rickey-bestbuy.jpg` and `logo-gametape-stacked-white.png` (not WebP) | Run every fragment through the same image pass, not just the sales page |
-| 29 | Pages `index.html` still has `PASTE-YOUR-CHECKOUT-LINK` | Fine for a preview; never send traffic to the Pages copy. The builder version gets the real link at build time |
+| 29 | Pages `index.html` still has `PASTE-YOUR-CHECKOUT-LINK` | Every button is dead in that preview: tell the client before they click, or fill `checkout` in `page-config.json`. Never send traffic to the Pages copy |
 | 30 | Public repo also holds transcripts and research; `.git` is 96 MB | Confirm exposure up front; consider keeping heavy or raw files out of the page repo |
 | 31 | `expand_body.py (was gen_body.py)` assert failed after a token was removed | Replacements must tolerate missing tokens; only assert that no `@@` remains |
 | 32 | Not verified end to end: no PageSpeed run, no test purchase | Add both as required steps in the playbook |
@@ -90,7 +90,7 @@ Things that went wrong while building the Rickey page, and the fix. Read before 
 | F16 | Photo rights | `rickey.jpg` is Getty with a watermark; `rickey-photo.jpeg` is likely a cropped version of it | Flag it, follow the client's decision, repeat the flag in the summary. (Later replaced by `rickey-bestbuy.jpg` plus the red carpet photo.) |
 | F17 | Logo strip implies endorsement | 6 logos, but the copy names Nike, Subway and Temu | Flag it and ask which brands are real. The client decided to keep them "anyways". |
 | F18 | PII in social screenshots and videos | Commenters' names "Joel Moreno", "KayKay" | Flag it. Public comments, but still listed. |
-| F19 | The checker misses placeholder checkout links | `href="PASTE-YOUR-CHECKOUT-LINK"` passes | `grep -c 'PASTE-YOUR-CHECKOUT-LINK'` before export |
+| F19 | The checker misses placeholder checkout links | `href="PASTE-YOUR-CHECKOUT-LINK"` passes | `rebuild.sh` prints a NOTE while any is left; `grep -c 'PASTE-YOUR-CHECKOUT-LINK'` must be 0 before real traffic |
 | F20 | `{FILL IN}` disclaimer note keeps the check at FIX | The check stayed at FIX through every round of Slice A. Claude only drafted disclaimers later, around #28 ("so we can go live"). | Ask for disclaimers early, or offer drafts for the client to approve (done later: earnings, TikTok/ByteDance non-affiliation, refund policy) |
 | F21 | Reveal animation hides content in screenshots | Blank sections | `document.documentElement.classList.remove('anim')` during QA (on Nov 19: add `in` to `.r` with JS, never in the source) |
 | F22 | Edit tool after a script changed the file | "file had been modified on disk since you last read it" | Re-read before context-dependent edits |

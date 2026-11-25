@@ -23,3 +23,5 @@ The page this playbook was built from. Live: https://shuri-lab.github.io/rickey-
 | `funnel-pages/` | F1 to F5 | **The same pages as data** (`funnel-pages.json`), what it builds (`dist/`), the local previews and their screenshots (`shots/`). Links are empty on purpose |
 
 To rebuild it yourself from these files: copy the `sales-page/my-sales-page` layout (body-src, page-config, brand-kit, copy, images) and run `tools/rebuild.sh`. It reproduces the live page byte for byte.
+
+**Version:** `body-src.html`, `copy-final.md` and `page-config.json` are the approved v1.1 (Nov 24: new section-2 header, every button straight to checkout). The full-page screenshots were taken before it, so they show the old header.
