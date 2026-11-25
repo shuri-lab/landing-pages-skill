@@ -54,7 +54,7 @@ You never edit the JSON by hand: say what to change in plain words and Claude ed
 | `upsells[].video` | A video instead of the image (never run live by us) |
 | `items[].thumb`, `items[].modules` | Small picture; numbered list under the item |
 | `bump.banner`, `main.pill`, `main.email_help`, `main.order_button` | Replace the standard texts |
-| `labels` `{what_you_get, total, offer_head, save, now, order_subtext, guarantee_scope}` | Wording of fixed labels |
+| `labels` `{what_you_get, total, offer_head, save, now, order_subtext, guarantee_scope, see_everything, hide_details, summary_save, one_time}` | Wording of fixed labels |
 | `brand.alert_color` | A stronger color for the alert bar |
 | `thankyou.quote` | Only words the founder said or approved, with `source` |
 | `real_deadline`, `accepted`, `legal` | The client's real deadline; settled CHECKs with a reason; privacy, terms and refund links |

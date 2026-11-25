@@ -111,8 +111,9 @@ Two columns, like the user's reference checkout: left = offer summary (custom HT
     - includes line "7-Day Course + 30-Day Challenge + Rickey Army channel" (12.5px, 78% white);
     - price row ~~$201~~ + red badge "$27 today" (15px).
   - **Trust row** under the card, centered, 11.5px #4a4a55, each item prefixed with a red ✓: "One-time payment · Instant access · 90-day refund".
+  - **"See everything included" toggle** inside the card (v1.1, Nov 24): closed = that label and a ▼ only (a line listing the items would repeat the includes line above it); open = "Hide the details" ▲, ✓ item + crossed value rows, Total value with a "You save $X" pill, "Today $X one-time", the guarantee in a dashed box. One click listener on the page, `aria-expanded`, hidden from screen readers while closed, no motion under reduced motion.
   - Less builder spacing on phones only: `[class*="section-"]:has(.c-order-form){padding-top:6px!important;padding-bottom:6px!important}` and `.c-column:has(#gtc-root)>.inner,.c-column:has(.c-order-form)>.inner{padding-top:4px!important;padding-bottom:4px!important}`.
-- General rule: on phones, the summary is at most one card plus one trust line (~140px tall), and the first input sits in the top half of a 393×852 screen. Desktop stays unchanged.
+- General rule: on phones, the summary is at most one card plus one trust line (~140px tall, ~180px with the closed toggle), and the first input sits in the top half of a 393×852 screen. Desktop stays unchanged.
 
 ### E3. Contact-form polish (generic rules + the GHL selectors used)
 - **Surface:** white card, `1px solid #E7E3DC`, radius 16, `box-shadow:0 10px 30px rgba(16,16,23,.07)`, padding 22/20 (`.order-form__surface`).

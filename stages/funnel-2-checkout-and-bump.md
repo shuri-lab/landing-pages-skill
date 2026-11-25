@@ -16,17 +16,18 @@
    - "Select product" and the subtotal are hidden; "Total due today" stays and changes when the box is ticked, and back;
    - desktop: the left column repeats the promise, what they get, the total value, today's price and the guarantee in the approved words.
 4. **Change copy in the JSON.** A design change for this client only goes in `my-funnel-pages/extra-checkout.css` (or `extra-upsell.css`, `extra-thank-you.css`): the build adds it after the standard styles every time. A change every client should get goes in the playbook's `tools/funnel_templates/`. Never edit `dist/` by hand: the next build overwrites it.
-5. Open `shots/checkout-phone-bump-ticked.png` too: the ticked box must look clearly chosen and the total must have changed.
+5. Open `shots/checkout-phone-details-open.png`: the phone card opened with "See everything included" shows every item with its value, the total, what they save, today's price and the guarantee, nothing cut off. Then open `shots/checkout-phone-bump-ticked.png` too: the ticked box must look clearly chosen and the total must have changed.
 
 ## Rules
 - Only Full Name and Email for a digital product. One-step form. No quantity, coupons or second product.
 - The sales page never mentions the bump. The build checks this when `sales_page` is set in the JSON. If there is no file, read the live page yourself, then accept the `sales_page` CHECK.
 - If the main guarantee doesn't cover the bump, `guarantee_covers_bump: false` adds one line saying what it's for.
-- On phones the left column is hidden, so the guarantee shows under the order button, added by the page's script (never tried on a live GHL page yet: look at it there).
+- On phones the left column is hidden. The compact card carries a **"See everything included"** toggle: closed on load (only that label, no extra line under it), it opens the value stack and the guarantee, then reads "Hide the details". It comes from the same data as desktop, so nothing to write. It adds about 37px, and the first field still shows on the first screen. Live on Rickey's checkout since Nov 24; its effect on sales isn't measured.
+- The guarantee also shows under the order button, added by the page's script (never tried on a live GHL page yet: look at it there).
 - The bump's file isn't in the main course. Its delivery is its own (see `funnel-offers.md`, "Who gets what").
 - Legal links (privacy, terms, refunds) show under the left column when the JSON has them. Never write legal text.
 - GHL re-renders its form when the bump is ticked, so anything added by script must check before adding. The built script does.
 
 ## Done when
 - [ ] Checker passes checkout at both sizes; bump totals go base → base + bump → base.
-- [ ] You looked at all four checkout screenshots.
+- [ ] The phone toggle opens and closes; you looked at all five checkout screenshots.

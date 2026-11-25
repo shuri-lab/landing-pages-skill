@@ -42,6 +42,11 @@ const probe = (type) => `(async () => {
   if (${JSON.stringify(type)} === 'checkout') {
     const f = [...document.querySelectorAll('.c-order-form .order-form__input')].find(vis), t = () => $('.order-form__summary-row--total').innerText.replace(/\\s+/g, ' ');
     r.first_field_bottom = bot(f); r.select_hidden = !vis($('.order-form__offer'));
+    const tg = $('#gtc .tg');
+    if (tg && vis(tg)) { const pn = $('#gtc .pn'), h = () => Math.round(pn.getBoundingClientRect().height), wait = () => new Promise(x => setTimeout(x, 900)), m = { closed: h(), label: tg.innerText.replace(/\\s+/g, ' ').trim() };
+      tg.click(); await wait(); m.open = h(); m.clipped = [...pn.querySelectorAll('.it, .tl, .td, .gr')].filter(e => e.getBoundingClientRect().bottom > pn.getBoundingClientRect().bottom + 1).length; m.items = pn.querySelectorAll('.it').length; m.text = pn.innerText.replace(/\\s+/g, ' '); m.sideways = Math.max(0, document.documentElement.scrollWidth - W);
+      m.hard = [...pn.querySelectorAll('.nm, .tl > span, .td, .gr p')].filter(e => e.scrollWidth > e.clientWidth + 1).length;
+      tg.click(); await wait(); m.again = h(); r.toggle = m; } else r.toggle = null;
     const b = $('.order-form__bump-check');
     if (b) { r.bump = { ticked_by_default: b.checked, before: t() }; b.click(); await new Promise(x => setTimeout(x, 700)); r.bump.after = t(); b.click(); await new Promise(x => setTimeout(x, 400)); r.bump.back = t();
       r.bump.banner = document.querySelectorAll('.gt-bump-top').length; r.bump.arrow = document.querySelectorAll('.gt-arrow').length; r.bump.img = document.querySelectorAll('.gt-bump-img').length; r.bump.align = getComputedStyle($('.order-form__bump-oto')).textAlign;
@@ -66,6 +71,12 @@ const judge = (type, view, r) => {
   if (type === 'checkout') {
     if (phone && !(r.first_field_bottom <= r.H)) f.push(`first form field ends at ${r.first_field_bottom}px, below the first screen (${r.H})`);
     if (phone && r.first_field_bottom > 470) w.push(`first field ends at ${r.first_field_bottom}px; aim for the top half of the screen`);
+    if (phone) { const t = r.toggle, tx = s => String(s || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+      if (!t) f.push('no "See everything included" toggle on the phone card');
+      else { if (t.closed > 1 || t.again > 1) f.push(`the "See everything included" panel must be closed on load and close again (${t.closed}px / ${t.again}px)`);
+        if (t.open < 60) f.push('"See everything included" does not open'); if (t.clipped) f.push(`the opened panel cuts off ${t.clipped} line(s)`); if (t.sideways || t.hard) f.push('the opened panel is wider than the phone');
+        const miss = [...cfg.main.items.map(i => i.name), cfg.main.price, cfg.main.guarantee.text].filter(x => !tx(t.text).includes(tx(x))); if (miss.length) f.push(`the opened panel misses: ${miss.map(x => tx(x).slice(0, 40)).join(' | ')}`);
+        if (cfg.bump && tx(t.text).includes(tx(cfg.bump.name))) { if (!cfg.main.items.some(i => tx(i.name).includes(tx(cfg.bump.name)))) w.push('the panel names the bump product'); } } }
     if (!r.select_hidden) f.push('"Select product" is visible');
     if (cfg.bump && !r.bump) f.push('no order bump');
     if (r.bump) { const b = r.bump; if (b.ticked_by_default) f.push('the bump is ticked by default'); if (b.before === b.after || b.before !== b.back) f.push(`totals wrong: ${b.before} / ${b.after} / ${b.back}`);
@@ -105,6 +116,7 @@ try {
     if (view === '1280' || view === '1920') { const fs = await send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(shots, name + '-first-screen.png'), Buffer.from(fs.data, 'base64')); if (!jsonOnly) { console.log(`${f.length ? 'FAIL' : 'PASS'}  ${file} (${view})`); f.forEach(x => console.log('      FIX   ' + x)); } continue; }
     const fold = await send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(shots, name + '-first-screen.png'), Buffer.from(fold.data, 'base64'));
     const full = await send('Page.captureScreenshot', { format: 'jpeg', quality: 75, captureBeyondViewport: true, clip: { x: 0, y: 0, width: vp.width, height: Math.min(r.height, 12000), scale: vp.mobile ? 1 : .7 } }); writeFileSync(join(shots, name + '-full.jpg'), Buffer.from(full.data, 'base64'));
+    if (type === 'checkout' && view === 'phone' && r.toggle) { await send('Runtime.evaluate', { expression: "scrollTo(0,0);document.querySelector('#gtc .tg').click()" }); await sleep(900); const o = await send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(shots, name + '-details-open.png'), Buffer.from(o.data, 'base64')); await send('Runtime.evaluate', { expression: "document.querySelector('#gtc .tg').click()" }); await sleep(600); }
     if (type === 'checkout' && r.bump) { await send('Runtime.evaluate', { expression: "document.querySelector('.order-form__bump-check').click();document.querySelector('.order-form__bump').scrollIntoView({block:'center'})" }); await sleep(700); const t = await send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(shots, name + '-bump-ticked.png'), Buffer.from(t.data, 'base64')); }
     if (!jsonOnly) { console.log(`${f.length ? 'FAIL' : 'PASS'}  ${file} (${view})`); f.forEach(x => console.log('      FIX   ' + x)); w.forEach(x => console.log('      CHECK ' + x)); }
   }

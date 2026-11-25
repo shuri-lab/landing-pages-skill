@@ -307,9 +307,16 @@ def checkout(c):
     gnote = '<br><small>%s</small>' % rich(L(c, 'guarantee_scope', 'This guarantee is for %s.' % plain(m['name']))) if bump and not m.get('guarantee_covers_bump') else ''
     gphone = gtitle + rich(g['text']) + gnote
     spans = ''.join('<span>%s</span>' % rich(x) for x in m['trust'])
+    price = money(m['price']); one = ' <small>%s</small>' % rich(L(c, 'one_time', 'one-time')) if 'one-time' in plain(' '.join(m['trust'])).lower() else ''
+    its = ''.join(f'            <div class="it"><span class="l"><span class="ok">✓</span><span class="nm">{rich(i["name"])}</span></span>{crossed(i.get("value"))}</div>\n' for i in m['items'])
+    sv = f'<span class="sv">{rich(L(c, "summary_save", "You save"))} {fmt(total - price)}</span>' if total and price and total > price else ''
+    tl = f'            <div class="tl"><span>{rich(L(c, "total", "Total value"))}</span><span class="rt">{sv}<s>{fmt(total)}</s></span></div>\n' if total else ''
+    gt = plain(g.get('title')); gt = '<b>%s</b> ' % rich(g['title'] + ('' if gt[-1:] in '.!?' else '.')) if gt else ''
+    seeall, hide = L(c, 'see_everything', 'See everything included'), L(c, 'hide_details', 'Hide the details')
     card = 'card' if thumb else 'card" style="grid-template-columns:1fr'
     return f'''<!-- Checkout: left column + styling for the GHL order form and order bump on the right. Root id: {t["ROOT"]}
-     Desktop: full offer column (.gtc-d). Phone: one compact card (.gtc-m) so the form shows on the first screen.
+     Desktop: full offer column (.gtc-d). Phone: one compact card (.gtc-m) so the form shows on the first screen;
+     "See everything included" on it opens the value stack and the guarantee.
      No wrapper fix here on purpose (it would push the order form under this column). Built by tools/build_funnel_pages.py -->
 {fonts(c)}
 <style>
@@ -339,6 +346,13 @@ def checkout(c):
         <p class="inc">{rich(m["includes_line"])}</p>
         <div class="pr">{crossed(fmt(total) if total else "")}<b>{rich(m["price"])} today</b></div>
       </div>
+      <div class="more">
+        <button type="button" class="tg" aria-expanded="false" aria-controls="gtc-more"><span class="lb">{rich(seeall)}</span><span class="chev" aria-hidden="true">▼</span></button>
+        <div class="pn" id="gtc-more"><div class="in">
+{its}{tl}            <div class="td"><span>Today</span><b>{rich(m["price"])}{one}</b></div>
+            <div class="gr"><span class="ok">✓</span><p>{gt}{rich(g["text"])}{gnote}</p></div>
+        </div></div>
+      </div>
     </div>
     <div class="tr">{spans}</div>
   </div>
@@ -367,6 +381,13 @@ document.title={js("Checkout | " + plain(m["name"]))};
       if(IMG&&d&&!d.querySelector('.gt-bump-img')){{var i=document.createElement('img');i.className='gt-bump-img';i.src=IMG;i.alt=ALT;d.insertBefore(i,d.firstChild);}}
     }}
   }}
+  // phone card: open / close "See everything included" (one listener on the page, so a re-rendered card keeps working)
+  if(!window.__gtcToggle){{window.__gtcToggle=1;document.addEventListener('click',function(ev){{
+    var tg=ev.target.closest&&ev.target.closest('#gtc .tg'); if(!tg) return;
+    var open=tg.getAttribute('aria-expanded')!=='true';
+    tg.setAttribute('aria-expanded',open?'true':'false'); tg.parentNode.querySelector('.pn').classList.toggle('open',open);
+    tg.querySelector('.lb').textContent=open?{js(plain(hide))}:{js(plain(seeall))};
+  }});}}
   enhance();
   var tries=0,iv=setInterval(function(){{enhance();if(++tries>40)clearInterval(iv);}},250);
   if('MutationObserver' in window){{new MutationObserver(function(){{enhance();}}).observe(document.body,{{childList:true,subtree:true}});}}

@@ -201,6 +201,6 @@
       "REPLACE-ME": "file and how it was counted, or the client's words"
     }
   },
-  "_optional": "main.pill, main.order_button; upsells: pill, progress, title, offer_tag, price_note, lead_1, lead_2, hide_name_label (true when the image already shows the name), jump_button (text of a link down to the offer), proof_headline, proof [{text, by, image, image_alt, source}], founder_note {text, by, photo, photo_position, source}, faq_headline, faq [{q, a}], video (instead of image); bump.banner; thankyou.quote (only with a source); labels {what_you_get, total, offer_head, save, now, order_subtext, guarantee_scope}; brand.alert_color; real_deadline; accepted {\"id of a CHECK\": \"why it's fine\"}",
+  "_optional": "main.pill, main.order_button; upsells: pill, progress, title, offer_tag, price_note, lead_1, lead_2, hide_name_label (true when the image already shows the name), jump_button (text of a link down to the offer), proof_headline, proof [{text, by, image, image_alt, source}], founder_note {text, by, photo, photo_position, source}, faq_headline, faq [{q, a}], video (instead of image); bump.banner; thankyou.quote (only with a source); labels {what_you_get, total, offer_head, save, now, order_subtext, guarantee_scope, see_everything, hide_details, summary_save, one_time}; brand.alert_color; real_deadline; accepted {\"id of a CHECK\": \"why it's fine\"}",
   "accepted": {}
 }
