@@ -14,7 +14,7 @@ This repo packages all of it: the process, every tool and link, every rule the f
 | Before (first draft) | After (final), phone | After (final), desktop |
 |---|---|---|
 | ![v1](examples/rickey-headstart/screenshots/early-v1/mobile-393x852-fold.png) | ![final](examples/rickey-headstart/screenshots/mobile-393x852-fold.png) | ![final desktop](examples/rickey-headstart/screenshots/desktop-1440x900-fold.png) |
-| 13 different button labels, dashes, "steal", placeholder links. **Auto grade 25/50** | **Auto grade 50/50**, live at https://shuri-lab.github.io/rickey-tiktokshop-project/ | |
+| 13 different button labels, dashes, "steal", placeholder links. **Auto grade 28/50** | **Auto grade 50/50**, live at https://shuri-lab.github.io/rickey-tiktokshop-project/ | |
 
 ## Start in 2 minutes
 1. **Get the playbook.** Use either:
